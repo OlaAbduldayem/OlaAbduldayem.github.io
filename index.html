@@ -6,9 +6,11 @@
 
   <title>Ola Abduldayem | Arabic Copywriter & Content Strategist</title>
 
-  <meta name="description" content="Ola Abduldayem is an Arabic Copywriter and Content Strategist with 7+ years of experience in Arabic content and localization.">
+  <meta name="description"
+        content="Ola Abduldayem is an Arabic Copywriter and Content Strategist with 7+ years of experience in Arabic content and localization.">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -20,9 +22,9 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f8f8f6;
+      background: #f7f7f5;
       color: #111;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     a {
@@ -30,87 +32,111 @@
       text-decoration: none;
     }
 
-    /* Navigation */
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
     nav {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 72px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       padding: 0 5vw;
-      background: rgba(248, 248, 246, 0.95);
+
+      background: rgba(247,247,245,0.96);
       border-bottom: 1px solid #ddd;
+
       z-index: 100;
     }
 
     .logo {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
       letter-spacing: -0.5px;
     }
 
     .nav-links {
       display: flex;
-      gap: 32px;
-      font-size: 13px;
+      gap: 34px;
+
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.8px;
+    }
+
+    .nav-links a {
+      transition: opacity 0.3s ease;
     }
 
     .nav-links a:hover {
-      opacity: 0.5;
+      opacity: 0.45;
     }
 
-    /* Hero */
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
       min-height: 100vh;
+      padding-top: 72px;
+
       display: grid;
       grid-template-columns: 45% 55%;
-      padding-top: 72px;
     }
 
     .hero-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 8vw;
-      background: #f8f8f6;
+
+      padding: 7vw;
     }
 
     .hero-text h1 {
-      font-size: clamp(52px, 6vw, 92px);
-      line-height: 0.95;
-      letter-spacing: -4px;
-      margin-bottom: 30px;
+      font-size: clamp(58px, 7vw, 100px);
+      line-height: 0.88;
+      letter-spacing: -5px;
       font-weight: 700;
+
+      margin-bottom: 34px;
     }
 
     .role {
       font-size: 20px;
       line-height: 1.4;
-      margin-bottom: 22px;
-      max-width: 430px;
+      margin-bottom: 20px;
     }
 
     .intro {
+      max-width: 430px;
+
       font-size: 15px;
       line-height: 1.8;
+
       color: #444;
-      max-width: 430px;
-      margin-bottom: 35px;
+
+      margin-bottom: 34px;
     }
 
     .button {
-      display: inline-flex;
       width: fit-content;
+
       padding: 14px 25px;
+
       border: 1px solid #111;
-      font-size: 12px;
+
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.7px;
+
       transition: all 0.3s ease;
     }
 
@@ -121,186 +147,386 @@
 
     .experience {
       margin-top: 65px;
-      font-size: 12px;
-      letter-spacing: 1.5px;
+
+      font-size: 11px;
       text-transform: uppercase;
+      letter-spacing: 1.7px;
     }
+
+
+    /* =========================
+       HERO IMAGE
+    ========================= */
 
     .hero-image {
       background: #111;
+
       min-height: calc(100vh - 72px);
+
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6vw;
+
+      padding: 5vw;
     }
 
-    .image-placeholder {
+    .hero-image img {
       width: 100%;
       height: 100%;
-      min-height: 650px;
-      background: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #555;
-      font-size: 13px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+
+      max-height: 760px;
+
+      object-fit: cover;
+      object-position: center;
+
+      filter: grayscale(100%);
     }
 
-    /* Intro section */
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
     .section {
-      padding: 120px 8vw;
-      border-top: 1px solid #ddd;
+      padding: 130px 8vw;
+
+      border-top: 1px solid #d5d5d5;
     }
 
     .section-label {
       font-size: 11px;
+
       text-transform: uppercase;
       letter-spacing: 2px;
-      margin-bottom: 35px;
+
       color: #666;
+
+      margin-bottom: 42px;
     }
 
-    .section-title {
-      font-size: clamp(40px, 5vw, 72px);
-      line-height: 1;
-      letter-spacing: -3px;
-      max-width: 900px;
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 30% 70%;
+
+      gap: 7vw;
+    }
+
+    .about-title {
+      font-size: clamp(48px, 6vw, 80px);
+
+      line-height: 0.95;
+      letter-spacing: -4px;
+    }
+
+    .about-content {
+      max-width: 800px;
+    }
+
+    .about-content h3 {
+      font-size: 34px;
+
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+
+      margin-bottom: 30px;
+    }
+
+    .about-content p {
+      font-size: 16px;
+
+      line-height: 1.9;
+
+      color: #444;
+
+      margin-bottom: 22px;
+    }
+
+    .about-signature {
+      margin-top: 42px;
+
+      font-size: 12px;
+
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+
+    /* =========================
+       WHAT I DO
+    ========================= */
+
+    .what-title {
+      max-width: 950px;
+
+      font-size: clamp(48px, 6vw, 86px);
+
+      line-height: 0.95;
+      letter-spacing: -4px;
+
+      margin-bottom: 90px;
     }
 
     .services {
-      margin-top: 80px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0;
       border-top: 1px solid #111;
     }
 
     .service {
+      display: grid;
+
+      grid-template-columns: 30% 70%;
+
       padding: 30px 0;
+
       border-bottom: 1px solid #ccc;
-      font-size: 20px;
     }
 
-    .service:nth-child(odd) {
-      margin-right: 50px;
+    .service-number {
+      font-size: 11px;
+
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+
+      color: #777;
     }
 
-    /* Footer */
+    .service-content h3 {
+      font-size: 24px;
+
+      font-weight: 500;
+
+      margin-bottom: 12px;
+    }
+
+    .service-content p {
+      max-width: 650px;
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      color: #555;
+    }
+
+    .closing-line {
+      margin-top: 75px;
+
+      max-width: 850px;
+
+      font-size: 24px;
+
+      line-height: 1.45;
+
+      letter-spacing: -0.5px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
       background: #111;
       color: #fff;
-      padding: 80px 8vw;
+
+      padding: 110px 8vw;
+    }
+
+    footer .section-label {
+      color: #999;
     }
 
     footer h2 {
-      font-size: clamp(45px, 6vw, 85px);
-      line-height: 0.95;
-      letter-spacing: -4px;
-      margin-bottom: 40px;
+      max-width: 900px;
+
+      font-size: clamp(55px, 8vw, 115px);
+
+      line-height: 0.88;
+      letter-spacing: -6px;
+
+      margin-bottom: 55px;
     }
 
-    .footer-link {
-      font-size: 14px;
+    .email-link {
+      display: inline-block;
+
+      font-size: 13px;
+
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.8px;
+
       border-bottom: 1px solid #fff;
-      padding-bottom: 7px;
+
+      padding-bottom: 8px;
     }
 
     .copyright {
-      margin-top: 90px;
-      font-size: 11px;
-      color: #aaa;
-      letter-spacing: 1px;
+      margin-top: 110px;
+
+      font-size: 10px;
+
+      color: #888;
+
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
 
-    /* Mobile */
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 800px) {
 
       nav {
+        height: 64px;
         padding: 0 6vw;
       }
 
       .nav-links {
-        gap: 14px;
-        font-size: 10px;
+        gap: 15px;
+        font-size: 9px;
       }
 
       .hero {
         display: flex;
         flex-direction: column;
+
+        padding-top: 64px;
       }
 
       .hero-text {
-        padding: 80px 7vw;
-        min-height: 70vh;
+        min-height: 75vh;
+
+        padding: 75px 7vw;
       }
 
       .hero-text h1 {
-        font-size: 58px;
+        font-size: 60px;
         letter-spacing: -3px;
       }
 
+      .role {
+        font-size: 18px;
+      }
+
       .hero-image {
-        min-height: 70vh;
+        min-height: 75vh;
+
         padding: 7vw;
       }
 
-      .image-placeholder {
-        min-height: 500px;
+      .hero-image img {
+        max-height: none;
       }
 
       .section {
         padding: 90px 7vw;
       }
 
-      .services {
+      .about-grid {
         grid-template-columns: 1fr;
+        gap: 50px;
       }
 
-      .service:nth-child(odd) {
-        margin-right: 0;
+      .about-title {
+        font-size: 58px;
+      }
+
+      .about-content h3 {
+        font-size: 30px;
+      }
+
+      .service {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .what-title {
+        font-size: 58px;
+      }
+
+      .closing-line {
+        font-size: 20px;
       }
 
       footer {
-        padding: 70px 7vw;
+        padding: 80px 7vw;
+      }
+
+      footer h2 {
+        font-size: 65px;
+        letter-spacing: -4px;
+      }
+
+      .copyright {
+        margin-top: 80px;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
   <nav>
-    <a href="#" class="logo">OA</a>
+
+    <a href="#top" class="logo">
+      OA
+    </a>
 
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#what-i-do">
+        What I Do
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </div>
+
   </nav>
 
 
-  <main>
+  <main id="top">
 
-    <!-- HERO -->
+
+    <!-- =========================
+         01 / HERO
+    ========================= -->
+
     <section class="hero">
 
       <div class="hero-text">
 
-        <h1>Ola<br>Abduldayem</h1>
+        <h1>
+          Ola<br>
+          Abduldayem
+        </h1>
 
         <p class="role">
           Arabic Copywriter &amp; Content Strategist
         </p>
 
         <p class="intro">
-          I turn ideas into Arabic that feels native, relevant,
-          and worth remembering.
+          I turn ideas into Arabic that feels native,
+          relevant, and worth remembering.
         </p>
 
         <a href="#about" class="button">
@@ -316,84 +542,266 @@
 
       <div class="hero-image">
 
-        <div class="image-placeholder">
-          Your Photo
-        </div>
+        <img
+          src="ola-hero-photo.jpg"
+          alt="Ola Abduldayem"
+        >
 
       </div>
 
     </section>
 
 
-    <!-- ABOUT -->
+
+    <!-- =========================
+         02 / ABOUT ME
+    ========================= -->
+
     <section class="section" id="about">
 
       <div class="section-label">
-        01 / What I Do
+        01 / About Me
       </div>
 
-      <h2 class="section-title">
-        Arabic content built for people, platforms, and brands.
+
+      <div class="about-grid">
+
+        <div>
+          <h2 class="about-title">
+            I write Arabic<br>
+            with a purpose.
+          </h2>
+        </div>
+
+
+        <div class="about-content">
+
+          <h3>
+            Arabic content that connects brands
+            with people in the right language,
+            tone, and cultural context.
+          </h3>
+
+
+          <p>
+            I’m an Arabic Copywriter and Content Strategist
+            with 7+ years of experience creating content
+            that connects brands with people in the language,
+            tone, and cultural context that feel right.
+          </p>
+
+
+          <p>
+            My work spans advertising, social media,
+            digital campaigns, e-commerce, scripts,
+            product content, and Arabic localization.
+          </p>
+
+
+          <p>
+            I work across Modern Standard Arabic,
+            Egyptian, Saudi, and Gulf Arabic, adapting
+            ideas beyond translation to make them feel
+            natural, relevant, and culturally on point.
+          </p>
+
+
+          <div class="about-signature">
+            Think strategy. Write creatively.
+            Localize intelligently.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         03 / WHAT I DO
+    ========================= -->
+
+    <section class="section" id="what-i-do">
+
+      <div class="section-label">
+        02 / What I Do
+      </div>
+
+
+      <h2 class="what-title">
+        Different needs.
+        One strong Arabic voice.
       </h2>
+
 
       <div class="services">
 
-        <div class="service">
-          Arabic Copywriting
-        </div>
 
         <div class="service">
-          Content Strategy
+
+          <div class="service-number">
+            01 / Copywriting
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              Copywriting
+            </h3>
+
+            <p>
+              Campaign concepts, advertising copy,
+              headlines, social media, and creative content.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="service">
-          Arabic Localization
-        </div>
 
         <div class="service">
-          Social &amp; Digital Content
+
+          <div class="service-number">
+            02 / Arabic Content
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              Arabic Content
+            </h3>
+
+            <p>
+              Content that sounds human, purposeful,
+              and tailored to the audience.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="service">
-          Content Management
-        </div>
 
         <div class="service">
-          Brand Voice &amp; Messaging
+
+          <div class="service-number">
+            03 / Localization
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              Localization
+            </h3>
+
+            <p>
+              Arabic adaptation across MSA, Egyptian,
+              Saudi, and Gulf dialects, beyond literal translation.
+            </p>
+
+          </div>
+
         </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            04 / Content Strategy
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              Content Strategy
+            </h3>
+
+            <p>
+              Turning audience insights and brand objectives
+              into content with a clear direction.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            05 / E-commerce Content
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              E-commerce Content
+            </h3>
+
+            <p>
+              Product descriptions, listings,
+              benefits-led copy, and conversion-focused content.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-number">
+            06 / Creative Concepts &amp; Scripts
+          </div>
+
+          <div class="service-content">
+
+            <h3>
+              Creative Concepts &amp; Scripts
+            </h3>
+
+            <p>
+              Ideas, storytelling, campaign scripts,
+              and social-first creative concepts.
+            </p>
+
+          </div>
+
+        </div>
+
 
       </div>
+
+
+      <p class="closing-line">
+        Different audiences. Different voices.
+        One thing stays the same: the idea has to feel right in Arabic.
+      </p>
 
     </section>
 
 
-    <!-- WORK -->
-    <section class="section" id="work">
 
-      <div class="section-label">
-        02 / Selected Work
-      </div>
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
-      <h2 class="section-title">
-        A selection of creative work across advertising, digital content, and localization.
-      </h2>
-
-    </section>
-
-
-    <!-- CONTACT -->
     <footer id="contact">
 
       <div class="section-label">
-        03 / Let's Talk
+        03 / Contact
       </div>
 
       <h2>
-        Have a project<br>
-        in mind?
+        Let’s create<br>
+        something meaningful.
       </h2>
 
-      <a href="mailto:your-email@example.com" class="footer-link">
+      <a
+        href="mailto:YOUR-EMAIL-HERE"
+        class="email-link"
+      >
         Get in touch
       </a>
 
@@ -403,7 +811,9 @@
 
     </footer>
 
+
   </main>
+
 
 </body>
 </html>
