@@ -522,7 +522,343 @@
       }
 
     }
+    /* =========================
+   SELECTED WORK
+========================= */
 
+.selected-work-title {
+  max-width: 950px;
+  font-size: clamp(48px, 6vw, 86px);
+  line-height: 0.95;
+  letter-spacing: -4px;
+  margin-bottom: 32px;
+}
+
+.selected-work-intro {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 85px;
+}
+
+.selected-work-intro p + p {
+  margin-top: 12px;
+}
+
+.work-list {
+  border-top: 1px solid #111;
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  gap: 4vw;
+  padding: 75px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.work-number {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  color: #777;
+}
+
+.work-category {
+  margin-bottom: 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  color: #666;
+}
+
+.work-body h3 {
+  max-width: 800px;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1;
+  letter-spacing: -2.5px;
+  margin-bottom: 24px;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 42px;
+}
+
+.work-tag {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.work-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.case-block {
+  border-top: 1px solid #111;
+  padding-top: 17px;
+}
+
+.case-block h4 {
+  margin-bottom: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.case-block p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #555;
+}
+
+.copy-sample {
+  margin-top: 42px;
+  padding: 34px;
+  background: #111;
+  color: #fff;
+}
+
+.copy-label {
+  margin-bottom: 22px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  color: #aaa;
+}
+
+.copy-en {
+  max-width: 750px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #ccc;
+}
+
+.copy-ar {
+  max-width: 800px;
+  margin-top: 22px;
+  font-size: 25px;
+  line-height: 1.7;
+  text-align: right;
+  direction: rtl;
+}
+
+.copy-lines p {
+  margin-bottom: 12px;
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin-top: 42px;
+  background: #111;
+  border: 1px solid #111;
+}
+
+.ba-box {
+  background: #f7f7f5;
+  padding: 30px;
+}
+
+.ba-box h4 {
+  margin-bottom: 18px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #777;
+}
+
+.ba-box p {
+  font-size: 20px;
+  line-height: 1.65;
+  direction: rtl;
+  text-align: right;
+}
+
+.script-sample {
+  margin-top: 42px;
+  padding: 34px;
+  border: 1px solid #111;
+}
+
+.script-label {
+  margin-bottom: 24px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  color: #777;
+}
+
+.script-copy {
+  max-width: 680px;
+  margin-left: auto;
+  direction: rtl;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   CONCEPT LAB
+========================= */
+
+.concept-lab {
+  margin-top: 120px;
+  padding-top: 75px;
+  border-top: 1px solid #111;
+}
+
+.concept-label {
+  margin-bottom: 24px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.concept-heading {
+  max-width: 780px;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin-bottom: 22px;
+}
+
+.concept-intro {
+  max-width: 680px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 55px;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #111;
+  border: 1px solid #111;
+}
+
+.concept-card {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f5;
+  padding: 32px;
+}
+
+.concept-number {
+  margin-bottom: 55px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #777;
+}
+
+.concept-card h4 {
+  font-size: 27px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.concept-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.concept-link {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 35px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 5px;
+}
+
+
+/* =========================
+   SELECTED WORK MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .selected-work-title {
+    font-size: 58px;
+  }
+
+  .selected-work-intro {
+    margin-bottom: 60px;
+  }
+
+  .work-card {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 60px 0;
+  }
+
+  .work-body h3 {
+    font-size: 42px;
+  }
+
+  .work-case-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .copy-sample {
+    padding: 25px;
+  }
+
+  .copy-ar {
+    font-size: 21px;
+  }
+
+  .before-after {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-box p {
+    font-size: 18px;
+  }
+
+  .script-sample {
+    padding: 25px;
+  }
+
+  .concept-lab {
+    margin-top: 90px;
+    padding-top: 60px;
+  }
+
+  .concept-heading {
+    font-size: 50px;
+  }
+
+  .concept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-card {
+    min-height: 280px;
+  }
+
+}
   </style>
 </head>
 
@@ -549,7 +885,11 @@
       <a href="#what-i-do">
         What I Do
       </a>
-
+      
+       <a href="#work">
+         Work
+         </a>
+      
       <a href="#contact">
         Contact
       </a>
@@ -839,6 +1179,546 @@
       </p>
 
     </section>
+    <!-- =========================
+     SELECTED WORK
+========================= -->
+
+<section class="section" id="work">
+
+  <div class="section-label">
+    03 / Selected Work
+  </div>
+
+  <h2 class="selected-work-title">
+    Ideas I’ve helped<br>
+    bring to life.
+  </h2>
+
+  <div class="selected-work-intro">
+
+    <p>
+      A selection of work across advertising, social media,
+      digital campaigns, e-commerce, and Arabic localization.
+    </p>
+
+    <p>
+      Some projects are presented anonymously due to client confidentiality.
+    </p>
+
+  </div>
+
+  <div class="work-list">
+
+    <!-- PROJECT 01 -->
+
+    <article class="work-card">
+
+      <div class="work-number">
+        01 / 05
+      </div>
+
+      <div class="work-body">
+
+        <div class="work-category">
+          Arabic Localization &amp; Campaign Adaptation
+        </div>
+
+        <h3>
+          From global message<br>
+          to natural Arabic.
+        </h3>
+
+        <div class="work-tags">
+          <span class="work-tag">Localization</span>
+          <span class="work-tag">Arabic Copywriting</span>
+          <span class="work-tag">Campaign Adaptation</span>
+        </div>
+
+        <div class="work-case-grid">
+
+          <div class="case-block">
+            <h4>The Brief</h4>
+            <p>
+              Adapt a global home-appliance campaign into Arabic
+              without carrying the structure of the English message
+              word for word.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>The Thinking</h4>
+            <p>
+              Keep the original promise of space and flexibility,
+              but move the language closer to everyday life and
+              the way the benefit would naturally be expressed in Arabic.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>Why It Works</h4>
+            <p>
+              The adaptation preserves the idea rather than the sentence,
+              turning product features into a more human and relatable outcome.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="copy-sample">
+
+          <div class="copy-label">
+            English Idea → Arabic Adaptation
+          </div>
+
+          <p class="copy-en">
+            Master the big life moments with appliances that give you
+            more space and flexibility.
+          </p>
+
+          <p class="copy-ar" dir="rtl" lang="ar">
+            عيش لحظاتك الكبيرة بمساحة أوسع ومرونة أعلى
+            تخلي يومك أخف وأسهل.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 02 -->
+
+    <article class="work-card">
+
+      <div class="work-number">
+        02 / 05
+      </div>
+
+      <div class="work-body">
+
+        <div class="work-category">
+          FMCG Promotional Copy
+        </div>
+
+        <h3>
+          Short copy.<br>
+          Clear appetite appeal.
+        </h3>
+
+        <div class="work-tags">
+          <span class="work-tag">FMCG</span>
+          <span class="work-tag">Product Messaging</span>
+          <span class="work-tag">Short-form Copy</span>
+        </div>
+
+        <div class="work-case-grid">
+
+          <div class="case-block">
+            <h4>The Brief</h4>
+            <p>
+              Turn product benefits into short Arabic messages
+              designed for everyday food and family moments.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>The Thinking</h4>
+            <p>
+              Use appetite-led language, conversational rhythm,
+              and familiar occasions rather than simply listing
+              functional product attributes.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>Why It Works</h4>
+            <p>
+              Each line has a different job: build taste appeal,
+              connect with the occasion, or create a short memorable
+              action-led phrase.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="copy-sample">
+
+          <div class="copy-label">
+            Selected Arabic Lines
+          </div>
+
+          <div class="copy-ar copy-lines" dir="rtl" lang="ar">
+            <p>طعمه كريمي وغني، ولذيذ جدًا.</p>
+            <p>يخلي أوقات الأكل مع العائلة أحلى.</p>
+            <p>غمّسه. تسلّى. كله.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 03 -->
+
+    <article class="work-card">
+
+      <div class="work-number">
+        03 / 05
+      </div>
+
+      <div class="work-body">
+
+        <div class="work-category">
+          Entertainment &amp; Social Campaign Concept
+        </div>
+
+        <h3>
+          When entertainment meets<br>
+          the product idea.
+        </h3>
+
+        <div class="work-tags">
+          <span class="work-tag">Creative Concept</span>
+          <span class="work-tag">Social Campaign</span>
+          <span class="work-tag">Cultural Adaptation</span>
+        </div>
+
+        <div class="work-case-grid">
+
+          <div class="case-block">
+            <h4>The Brief</h4>
+            <p>
+              Develop social-first Arabic concepts that connect
+              an entertainment theme with a snack product and its flavours.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>The Thinking</h4>
+            <p>
+              Use familiar entertainment codes as the hook,
+              then bring the product into the joke through flavour-led
+              wordplay rather than a traditional promotional line.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>Why It Works</h4>
+            <p>
+              Cultural familiarity gives the audience an immediate entry point,
+              while the flavour twist keeps the product central to the idea.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="copy-sample">
+
+          <div class="copy-label">
+            Concept Lines
+          </div>
+
+          <div class="copy-ar copy-lines" dir="rtl" lang="ar">
+            <p>قلبك محتار؟ خذ فرقعة من كل نكهة.</p>
+            <p>رجعوا... وخطفوا النكهة.</p>
+            <p>الهيبة... بطعم النكهة الحارة.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 04 -->
+
+    <article class="work-card">
+
+      <div class="work-number">
+        04 / 05
+      </div>
+
+      <div class="work-body">
+
+        <div class="work-category">
+          Copy Rework &amp; Content Strategy
+        </div>
+
+        <h3>
+          Less explanation.<br>
+          More direction.
+        </h3>
+
+        <div class="work-tags">
+          <span class="work-tag">Copy Editing</span>
+          <span class="work-tag">Fintech</span>
+          <span class="work-tag">Saudi Arabic</span>
+        </div>
+
+        <div class="work-case-grid">
+
+          <div class="case-block">
+            <h4>The Brief</h4>
+            <p>
+              Improve a business-finance social post that opened
+              with general information before reaching the audience
+              or the product benefit.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>The Thinking</h4>
+            <p>
+              Start with the business owner’s ambition and immediate concern,
+              then let the product enter after the message has earned attention.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>Why It Works</h4>
+            <p>
+              The rewritten version is audience-first, more conversational,
+              and creates a faster path from problem to relevance.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="before-after">
+
+          <div class="ba-box">
+            <h4>Before</h4>
+            <p dir="rtl" lang="ar">
+              إدارة الميزانية والتحكم في المصاريف
+              أسباب أساسية لنمو مشروعك...
+            </p>
+          </div>
+
+          <div class="ba-box">
+            <h4>After</h4>
+            <p dir="rtl" lang="ar">
+              إذا تبي مشروعك يكبر،
+              انتبه لمصاريفك وكيف تدير ميزانيتك.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECT 05 -->
+
+    <article class="work-card">
+
+      <div class="work-number">
+        05 / 05
+      </div>
+
+      <div class="work-body">
+
+        <div class="work-category">
+          Scriptwriting &amp; Social Video Concept
+        </div>
+
+        <h3>
+          Turning a product moment<br>
+          into a story.
+        </h3>
+
+        <div class="work-tags">
+          <span class="work-tag">Scriptwriting</span>
+          <span class="work-tag">Concept Development</span>
+          <span class="work-tag">Saudi Dialect</span>
+        </div>
+
+        <div class="work-case-grid">
+
+          <div class="case-block">
+            <h4>The Brief</h4>
+            <p>
+              Create a light short-form video concept around emotionally
+              charged moments that begin confidently and unravel under pressure.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>The Thinking</h4>
+            <p>
+              Build humour through contrast: high expectations,
+              emotional pressure, and a sudden loss of control.
+              The product becomes the moment that resets the scene.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h4>Why It Works</h4>
+            <p>
+              Instead of interrupting the story with a product message,
+              the product is given a role inside the narrative itself.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="script-sample">
+
+          <div class="script-label">
+            Short Script Excerpt
+          </div>
+
+          <div class="script-copy" dir="rtl" lang="ar">
+
+            <p>
+              هو: نور... قلبي، لبّى عيونك...
+            </p>
+
+            <p>
+              هي: هل؟
+            </p>
+
+            <p>
+              هو: ...
+            </p>
+
+            <p>
+              صوت من خلف الكاميرا:
+              خذ رشفة وكمل... لا تخرب اللحظة.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <!-- =========================
+       CONCEPT LAB
+  ========================= -->
+
+  <div class="concept-lab">
+
+    <div class="concept-label">
+      Concept Lab
+    </div>
+
+    <h3 class="concept-heading">
+      Exercises in voice,<br>
+      ideas, and observation.
+    </h3>
+
+    <p class="concept-intro">
+      A few creative exercises where the goal was not simply
+      to write another line, but to explore how a change in voice,
+      perspective, or restraint can change the entire idea.
+    </p>
+
+    <div class="concept-grid">
+
+
+      <article class="concept-card">
+
+        <div class="concept-number">
+          01 / Voice
+        </div>
+
+        <h4>
+          Four voices.<br>
+          One product.
+        </h4>
+
+        <p>
+          One pair of headphones written through four different voices,
+          exploring how perspective changes the emotional meaning
+          of the same product.
+        </p>
+
+        <a
+          class="concept-link"
+          href="https://lnkd.in/p/eXXhQpkb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on LinkedIn ↗
+        </a>
+
+      </article>
+
+
+      <article class="concept-card">
+
+        <div class="concept-number">
+          02 / Curiosity
+        </div>
+
+        <h4>
+          Say less.<br>
+          Make them curious.
+        </h4>
+
+        <p>
+          A camera-copy exercise exploring three levels of communication:
+          saying everything, suggesting the idea, and leaving space
+          for the audience to complete it.
+        </p>
+
+        <a
+          class="concept-link"
+          href="https://lnkd.in/p/ep-DCe2n"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on LinkedIn ↗
+        </a>
+
+      </article>
+
+
+      <article class="concept-card">
+
+        <div class="concept-number">
+          03 / Saudi Writing
+        </div>
+
+        <h4>
+          Writing the feeling,<br>
+          not the feature.
+        </h4>
+
+        <p>
+          A Saudi-dialect writing exercise built around calm,
+          coffee, conversation, and the feeling of having
+          somewhere to lean at the end of the day.
+        </p>
+
+        <a
+          class="concept-link"
+          href="https://lnkd.in/p/e3naEP8B"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on LinkedIn ↗
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
@@ -849,7 +1729,7 @@
     <footer id="contact">
 
       <div class="section-label">
-        03 / Contact
+        04 / Contact
       </div>
 
 
