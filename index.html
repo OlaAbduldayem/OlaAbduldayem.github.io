@@ -597,77 +597,37 @@
       max-width: 430px;
     }
 
-    .about-title span {
-      display: block;
+    .about-title {
+  font-size: clamp(30px, 2.9vw, 42px);
+  line-height: 1.28;
+  letter-spacing: -1.8px;
+  max-width: 560px;
+}
 
-      font-size: 0.48em;
+.about-title span {
+  display: block;
+  font-size: 1em;
+  line-height: 1.28;
+  letter-spacing: inherit;
+  margin-top: 18px;
+  max-width: 560px;
+}
 
-      line-height: 1.2;
+html[dir="rtl"] .about-title {
+  max-width: 560px;
+  line-height: 1.4;
+}
 
-      letter-spacing: -1.2px;
+html[dir="rtl"] .about-title span {
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
-      margin-top: 24px;
-
-      max-width: 380px;
-    }
-
-    html[dir="rtl"] .about-title {
-      max-width: 390px;
-    }
-
-    html[dir="rtl"] .about-title span {
-      letter-spacing: 0;
-
-      line-height: 1.55;
-    }
-
-    .about-content {
-      max-width: 760px;
-    }
-
-    .about-content h3 {
-      font-size: 30px;
-
-      line-height: 1.25;
-
-      letter-spacing: -1.2px;
-
-      margin-bottom: 26px;
-    }
-
-    html[dir="rtl"] .about-content h3 {
-      letter-spacing: 0;
-
-      line-height: 1.55;
-    }
-
-    .about-content p {
-      font-size: 16px;
-
-      line-height: 1.9;
-
-      color: #444;
-
-      margin-bottom: 20px;
-    }
-
-    .about-signature {
-      margin-top: 36px;
-
-      font-size: 12px;
-
-      text-transform: uppercase;
-
-      letter-spacing: 2px;
-    }
-
-    html[dir="rtl"] .about-signature {
-      text-transform: none;
-
-      letter-spacing: 0;
-
-      font-size: 14px;
-    }
+@media (min-width: 801px) {
+  html[dir="rtl"] .about-title > span:first-child {
+    white-space: nowrap;
+  }
+}
 
 
     /* =========================
