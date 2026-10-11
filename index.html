@@ -21,7 +21,6 @@
     href="https://olaabduldayem.github.io/"
   >
 
-  <!-- Social sharing preview -->
   <meta
     property="og:title"
     content="Ola Abduldayem | Arabic Copywriter & Content Strategist"
@@ -42,7 +41,10 @@
     content="https://olaabduldayem.github.io/ola-hero-photo.png"
   >
 
-  <meta property="og:type" content="website">
+  <meta
+    property="og:type"
+    content="website"
+  >
 
   <meta
     name="theme-color"
@@ -55,6 +57,31 @@
 
 
   <style>
+
+    /* =========================
+       CUSTOM ARABIC FONT
+    ========================= */
+
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("thmanyahsans-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("thmanyahsans-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+
+    /* =========================
+       VARIABLES
+    ========================= */
 
     :root {
       --bg: #f7f7f5;
@@ -103,6 +130,10 @@
       font: inherit;
     }
 
+    img {
+      max-width: 100%;
+    }
+
     a,
     button {
       -webkit-tap-highlight-color: transparent;
@@ -120,6 +151,7 @@
 
     html[dir="rtl"] body {
       font-family:
+        "Thmanyah Sans",
         Tahoma,
         Arial,
         sans-serif;
@@ -133,7 +165,7 @@
     html[dir="rtl"] .concept-heading,
     html[dir="rtl"] footer h2 {
       letter-spacing: 0;
-      line-height: 1.15;
+      line-height: 1.18;
     }
 
     html[dir="rtl"] .section-label,
@@ -218,6 +250,7 @@
     .nav-right {
       display: flex;
       align-items: center;
+
       gap: 16px;
     }
 
@@ -343,17 +376,17 @@
 
       justify-content: center;
 
-      padding: 7vw 4vw 7vw 7vw;
+      padding: 6vw 4vw 6vw 7vw;
     }
 
     html[dir="rtl"] .hero-text {
-      padding: 7vw 7vw 7vw 4vw;
+      padding: 6vw 7vw 6vw 4vw;
     }
 
     .hero-text h1 {
       max-width: 100%;
 
-      font-size: clamp(54px, 5.3vw, 78px);
+      font-size: clamp(54px, 5.2vw, 76px);
 
       line-height: 0.9;
 
@@ -367,7 +400,7 @@
     .role {
       font-size: 20px;
 
-      line-height: 1.4;
+      line-height: 1.45;
 
       margin-bottom: 20px;
     }
@@ -463,7 +496,8 @@
     html[dir="rtl"] .button {
       text-transform: none;
       letter-spacing: 0;
-      font-size: 12px;
+
+      font-size: 13px;
     }
 
     .button:hover {
@@ -476,16 +510,19 @@
 
     .button:active {
       transform: translateY(1px);
+
       background: var(--accent-dark);
     }
 
     .button.secondary {
       border-color: #bbb;
+
       color: #555;
     }
 
     .button.secondary:hover {
       color: #fff;
+
       border-color: var(--accent);
     }
 
@@ -526,7 +563,7 @@
     ========================= */
 
     .section {
-      padding: 130px 8vw;
+      padding: 120px 8vw;
 
       border-top: 1px solid var(--line);
     }
@@ -540,11 +577,12 @@
 
       color: #666;
 
-      margin-bottom: 42px;
+      margin-bottom: 40px;
     }
 
     .section-index {
       color: var(--accent);
+
       font-weight: 700;
     }
 
@@ -564,9 +602,9 @@
     }
 
     .about-title {
-      font-size: clamp(48px, 5.5vw, 76px);
+      font-size: clamp(48px, 5.2vw, 72px);
 
-      line-height: 0.95;
+      line-height: 0.98;
 
       letter-spacing: -4px;
 
@@ -582,13 +620,14 @@
 
       letter-spacing: -1.5px;
 
-      margin-top: 28px;
+      margin-top: 26px;
 
       max-width: 390px;
     }
 
     html[dir="rtl"] .about-title span {
       letter-spacing: 0;
+
       line-height: 1.55;
     }
 
@@ -597,17 +636,18 @@
     }
 
     .about-content h3 {
-      font-size: 34px;
+      font-size: 32px;
 
-      line-height: 1.15;
+      line-height: 1.2;
 
       letter-spacing: -1.5px;
 
-      margin-bottom: 30px;
+      margin-bottom: 26px;
     }
 
     html[dir="rtl"] .about-content h3 {
       letter-spacing: 0;
+
       line-height: 1.55;
     }
 
@@ -618,11 +658,11 @@
 
       color: #444;
 
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .about-signature {
-      margin-top: 42px;
+      margin-top: 36px;
 
       font-size: 12px;
 
@@ -633,7 +673,9 @@
 
     html[dir="rtl"] .about-signature {
       text-transform: none;
+
       letter-spacing: 0;
+
       font-size: 14px;
     }
 
@@ -645,13 +687,13 @@
     .what-title {
       max-width: 950px;
 
-      font-size: clamp(48px, 6vw, 86px);
+      font-size: clamp(48px, 5.8vw, 82px);
 
-      line-height: 0.95;
+      line-height: 0.98;
 
       letter-spacing: -4px;
 
-      margin-bottom: 90px;
+      margin-bottom: 80px;
     }
 
     .services {
@@ -663,7 +705,7 @@
 
       grid-template-columns: 30% 70%;
 
-      padding: 30px 0;
+      padding: 28px 0;
 
       border-bottom: 1px solid #ccc;
 
@@ -693,11 +735,11 @@
     }
 
     .service-content h3 {
-      font-size: 24px;
+      font-size: 23px;
 
       font-weight: 500;
 
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
 
     .service-content p {
@@ -705,25 +747,26 @@
 
       font-size: 14px;
 
-      line-height: 1.7;
+      line-height: 1.75;
 
       color: #555;
     }
 
     .closing-line {
-      margin-top: 75px;
+      margin-top: 65px;
 
       max-width: 850px;
 
-      font-size: 24px;
+      font-size: 23px;
 
-      line-height: 1.45;
+      line-height: 1.5;
 
       letter-spacing: -0.5px;
     }
 
     html[dir="rtl"] .closing-line {
       letter-spacing: 0;
+
       line-height: 1.8;
     }
 
@@ -733,24 +776,25 @@
     ========================= */
 
     .transition-copy {
-      margin-top: 80px;
+      margin-top: 72px;
 
-      padding-top: 28px;
+      padding-top: 26px;
 
       border-top: 1px solid #111;
 
       max-width: 750px;
 
-      font-size: clamp(25px, 2.8vw, 40px);
+      font-size: clamp(24px, 2.7vw, 38px);
 
-      line-height: 1.2;
+      line-height: 1.25;
 
       letter-spacing: -1.5px;
     }
 
     html[dir="rtl"] .transition-copy {
       letter-spacing: 0;
-      line-height: 1.6;
+
+      line-height: 1.65;
     }
 
     .transition-copy span {
@@ -765,13 +809,13 @@
     .selected-work-title {
       max-width: 950px;
 
-      font-size: clamp(48px, 6vw, 86px);
+      font-size: clamp(48px, 5.8vw, 82px);
 
-      line-height: 0.95;
+      line-height: 0.98;
 
       letter-spacing: -4px;
 
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     .selected-work-intro {
@@ -783,7 +827,7 @@
 
       color: #444;
 
-      margin-bottom: 85px;
+      margin-bottom: 75px;
     }
 
     .selected-work-intro p + p {
@@ -797,11 +841,11 @@
     .work-card {
       display: grid;
 
-      grid-template-columns: 18% 82%;
+      grid-template-columns: 16% 84%;
 
       gap: 4vw;
 
-      padding: 75px 0;
+      padding: 70px 0;
 
       border-bottom: 1px solid #ccc;
     }
@@ -817,37 +861,36 @@
     }
 
     .work-category {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
 
       font-size: 11px;
 
       text-transform: uppercase;
 
-      letter-spacing: 1.7px;
+      letter-spacing: 1.6px;
 
       color: #666;
     }
 
     .work-body h3 {
-      max-width: 850px;
+      max-width: 880px;
 
-      font-size: clamp(34px, 4vw, 58px);
+      font-size: clamp(34px, 3.8vw, 54px);
 
-      line-height: 1;
+      line-height: 1.03;
 
-      letter-spacing: -2.5px;
+      letter-spacing: -2.4px;
 
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .work-tags {
       display: flex;
-
       flex-wrap: wrap;
 
       gap: 8px;
 
-      margin-bottom: 42px;
+      margin-bottom: 34px;
     }
 
     .work-tag {
@@ -859,7 +902,7 @@
 
       text-transform: uppercase;
 
-      letter-spacing: 1.3px;
+      letter-spacing: 1.2px;
 
       transition:
         border-color 0.25s ease,
@@ -868,6 +911,7 @@
 
     .work-tag:hover {
       color: var(--accent);
+
       border-color: var(--accent);
     }
 
@@ -878,13 +922,13 @@
 
       gap: 30px;
 
-      margin-top: 35px;
+      margin-top: 38px;
     }
 
     .case-block {
       border-top: 1px solid #111;
 
-      padding-top: 17px;
+      padding-top: 16px;
     }
 
     .case-block h4 {
@@ -902,9 +946,19 @@
     .case-block p {
       font-size: 14px;
 
-      line-height: 1.75;
+      line-height: 1.8;
 
       color: #555;
+    }
+
+
+    /* =========================
+       WORK PROOF FIRST
+    ========================= */
+
+    .proof-block {
+      margin-top: 18px;
+      margin-bottom: 34px;
     }
 
 
@@ -913,7 +967,7 @@
     ========================= */
 
     .copy-sample {
-      margin-top: 42px;
+      margin-top: 0;
 
       padding: 34px;
 
@@ -978,7 +1032,7 @@
     ========================= */
 
     .ecom-sample {
-      margin-top: 42px;
+      margin-top: 0;
 
       border: 1px solid #111;
     }
@@ -1009,6 +1063,7 @@
       padding: 28px;
 
       border-inline-end: 1px solid #ccc;
+
       border-bottom: 1px solid #ccc;
     }
 
@@ -1060,7 +1115,7 @@
     ========================= */
 
     .script-sample {
-      margin-top: 42px;
+      margin-top: 0;
 
       padding: 34px;
 
@@ -1080,7 +1135,7 @@
     }
 
     .script-copy {
-      max-width: 680px;
+      max-width: 720px;
 
       margin-inline-start: auto;
 
@@ -1103,7 +1158,7 @@
     ========================= */
 
     .work-visual {
-      margin-top: 42px;
+      margin-top: 0;
 
       width: 100%;
 
@@ -1112,6 +1167,8 @@
       border: 1px solid #111;
 
       background: #111;
+
+      cursor: zoom-in;
     }
 
     .work-visual img {
@@ -1120,12 +1177,79 @@
       width: 100%;
 
       height: auto;
+
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+    }
+
+    .work-visual:hover img {
+      transform: scale(1.01);
+
+      opacity: 0.96;
     }
 
     .ramadan-visual {
       width: 80%;
 
-      margin: 42px auto 0;
+      margin: 0 auto;
+    }
+
+
+    /* =========================
+       IMAGE LIGHTBOX
+    ========================= */
+
+    .lightbox {
+      position: fixed;
+
+      inset: 0;
+
+      display: none;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px;
+
+      background: rgba(0, 0, 0, 0.92);
+
+      z-index: 5000;
+
+      cursor: zoom-out;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 95vw;
+
+      max-height: 92vh;
+
+      object-fit: contain;
+
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
+    }
+
+    .lightbox-close {
+      position: absolute;
+
+      top: 20px;
+      right: 25px;
+
+      border: 0;
+
+      background: transparent;
+
+      color: #fff;
+
+      font-size: 34px;
+
+      line-height: 1;
+
+      cursor: pointer;
     }
 
 
@@ -1134,15 +1258,15 @@
     ========================= */
 
     .concept-lab {
-      margin-top: 120px;
+      margin-top: 110px;
 
-      padding-top: 75px;
+      padding-top: 70px;
 
       border-top: 1px solid #111;
     }
 
     .concept-label {
-      margin-bottom: 24px;
+      margin-bottom: 22px;
 
       font-size: 11px;
 
@@ -1154,15 +1278,15 @@
     }
 
     .concept-heading {
-      max-width: 780px;
+      max-width: 800px;
 
-      font-size: clamp(42px, 5vw, 70px);
+      font-size: clamp(42px, 4.8vw, 66px);
 
-      line-height: 0.98;
+      line-height: 1;
 
       letter-spacing: -3px;
 
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .concept-intro {
@@ -1174,7 +1298,7 @@
 
       color: #555;
 
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
     .concept-grid {
@@ -1190,15 +1314,14 @@
     }
 
     .concept-card {
-      min-height: 330px;
+      min-height: 320px;
 
       display: flex;
-
       flex-direction: column;
 
       background: var(--bg);
 
-      padding: 32px;
+      padding: 30px;
 
       box-shadow:
         inset 0 -2px 0 transparent;
@@ -1216,7 +1339,7 @@
     }
 
     .concept-number {
-      margin-bottom: 55px;
+      margin-bottom: 45px;
 
       font-size: 10px;
 
@@ -1228,24 +1351,25 @@
     }
 
     .concept-card h4 {
-      font-size: 27px;
+      font-size: 26px;
 
-      line-height: 1.1;
+      line-height: 1.15;
 
       letter-spacing: -1px;
 
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     html[dir="rtl"] .concept-card h4 {
       letter-spacing: 0;
+
       line-height: 1.5;
     }
 
     .concept-card p {
       font-size: 14px;
 
-      line-height: 1.7;
+      line-height: 1.75;
 
       color: #555;
     }
@@ -1255,7 +1379,7 @@
 
       margin-top: auto;
 
-      padding-top: 35px;
+      padding-top: 32px;
       padding-bottom: 5px;
 
       font-size: 10px;
@@ -1291,7 +1415,7 @@
 
       color: #fff;
 
-      padding: 110px 8vw;
+      padding: 105px 8vw;
     }
 
     footer .section-label {
@@ -1305,19 +1429,19 @@
     footer h2 {
       max-width: 950px;
 
-      font-size: clamp(55px, 7vw, 105px);
+      font-size: clamp(55px, 6.6vw, 98px);
 
-      line-height: 0.92;
+      line-height: 0.94;
 
       letter-spacing: -5px;
 
-      margin-bottom: 35px;
+      margin-bottom: 32px;
     }
 
     .footer-intro {
       max-width: 650px;
 
-      margin-bottom: 35px;
+      margin-bottom: 32px;
 
       color: #bbb;
 
@@ -1358,7 +1482,9 @@
     html[dir="rtl"] .email-link,
     html[dir="rtl"] .footer-link {
       text-transform: none;
+
       letter-spacing: 0;
+
       font-size: 13px;
     }
 
@@ -1370,7 +1496,7 @@
     }
 
     .copyright {
-      margin-top: 110px;
+      margin-top: 95px;
 
       font-size: 10px;
 
@@ -1391,11 +1517,11 @@
       .js .reveal {
         opacity: 0;
 
-        transform: translateY(14px);
+        transform: translateY(12px);
 
         transition:
-          opacity 0.55s ease,
-          transform 0.55s ease;
+          opacity 0.5s ease,
+          transform 0.5s ease;
       }
 
       .js .reveal.is-visible {
@@ -1418,7 +1544,7 @@
       }
 
       .work-card {
-        grid-template-columns: 14% 86%;
+        grid-template-columns: 13% 87%;
       }
 
       .work-case-grid {
@@ -1462,8 +1588,13 @@
         padding: 7px 6px;
       }
 
+      html[dir="rtl"] .nav-links a {
+        font-size: 9px;
+      }
+
       .language-switch button {
         padding: 6px 6px;
+
         font-size: 8px;
       }
 
@@ -1482,44 +1613,69 @@
       html[dir="rtl"] .hero-text {
         min-height: auto;
 
-        padding: 72px 6vw 58px;
+        padding: 52px 6vw 42px;
       }
 
       .hero-text h1 {
-        font-size: clamp(52px, 16vw, 64px);
+        font-size: clamp(44px, 13vw, 56px);
+
+        line-height: 0.98;
 
         letter-spacing: -3px;
 
-        margin-bottom: 25px;
+        margin-bottom: 20px;
       }
 
       html[dir="rtl"] .hero-text h1 {
-        font-size: clamp(48px, 14vw, 62px);
+        font-size: clamp(43px, 12vw, 54px);
+
+        line-height: 1.2;
       }
 
       .role {
-        font-size: 18px;
+        font-size: 17px;
+
+        margin-bottom: 16px;
       }
 
       .intro {
-        font-size: 16px;
+        font-size: 15px;
 
         line-height: 1.75;
+
+        margin-bottom: 20px;
+      }
+
+      .experience {
+        font-size: 10px;
+      }
+
+      .availability {
+        font-size: 9px;
+
+        margin-bottom: 24px;
+      }
+
+      html[dir="rtl"] .availability {
+        font-size: 11px;
       }
 
       .hero-actions {
         flex-direction: column;
+
         align-items: stretch;
       }
 
       .button {
         width: 100%;
+
+        padding: 13px 18px;
       }
 
       .hero-image {
-        min-height: 70vh;
+        min-height: auto;
 
-        padding: 6vw;
+        padding: 8vw 6vw;
       }
 
       .hero-image img {
@@ -1527,7 +1683,7 @@
 
         height: auto;
 
-        max-height: 70vh;
+        max-height: 68vh;
 
         object-fit: contain;
       }
@@ -1536,11 +1692,13 @@
       /* GENERAL */
 
       .section {
-        padding: 76px 6vw;
+        padding: 66px 6vw;
       }
 
       .section-label {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+
+        font-size: 10px;
       }
 
 
@@ -1549,13 +1707,15 @@
       .about-grid {
         grid-template-columns: 1fr;
 
-        gap: 42px;
+        gap: 30px;
       }
 
       .about-title {
-        font-size: clamp(46px, 14vw, 58px);
+        font-size: clamp(39px, 11vw, 48px);
 
-        letter-spacing: -3px;
+        line-height: 1.04;
+
+        letter-spacing: -2.5px;
       }
 
       .about-title span {
@@ -1563,27 +1723,31 @@
 
         max-width: 380px;
 
-        margin-top: 22px;
+        margin-top: 18px;
+      }
+
+      html[dir="rtl"] .about-title {
+        line-height: 1.22;
       }
 
       .about-content h3 {
-        font-size: 28px;
+        font-size: 24px;
 
-        line-height: 1.3;
+        line-height: 1.4;
 
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
 
       .about-content p {
         font-size: 15px;
 
-        line-height: 1.85;
+        line-height: 1.8;
 
-        margin-bottom: 18px;
+        margin-bottom: 16px;
       }
 
       .about-signature {
-        margin-top: 30px;
+        margin-top: 25px;
 
         line-height: 1.6;
       }
@@ -1593,21 +1757,28 @@
 
       .what-title,
       .selected-work-title {
-        font-size: clamp(48px, 14vw, 58px);
+        font-size: clamp(40px, 11vw, 50px);
 
-        letter-spacing: -3px;
+        line-height: 1.05;
+
+        letter-spacing: -2.5px;
+      }
+
+      html[dir="rtl"] .what-title,
+      html[dir="rtl"] .selected-work-title {
+        line-height: 1.25;
       }
 
       .what-title {
-        margin-bottom: 60px;
+        margin-bottom: 48px;
       }
 
       .service {
         grid-template-columns: 1fr;
 
-        gap: 12px;
+        gap: 10px;
 
-        padding: 25px 0;
+        padding: 22px 0;
       }
 
       .service:hover {
@@ -1615,30 +1786,34 @@
       }
 
       .service-content h3 {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       .service-content p {
+        font-size: 14px;
+
         line-height: 1.75;
       }
 
       .closing-line {
-        margin-top: 55px;
+        margin-top: 45px;
 
-        font-size: 20px;
+        font-size: 18px;
       }
 
       .transition-copy {
-        margin-top: 55px;
+        margin-top: 44px;
 
-        font-size: 27px;
+        font-size: 23px;
+
+        line-height: 1.4;
       }
 
 
-      /* WORK */
+      /* SELECTED WORK */
 
       .selected-work-intro {
-        margin-bottom: 55px;
+        margin-bottom: 45px;
 
         font-size: 15px;
       }
@@ -1646,33 +1821,61 @@
       .work-card {
         grid-template-columns: 1fr;
 
-        gap: 20px;
+        gap: 15px;
 
-        padding: 52px 0;
+        padding: 44px 0;
+      }
+
+      .work-number {
+        font-size: 10px;
       }
 
       .work-category {
-        line-height: 1.5;
+        font-size: 10px;
+
+        line-height: 1.45;
+      }
+
+      html[dir="rtl"] .work-category {
+        font-size: 12px;
       }
 
       .work-body h3 {
-        font-size: clamp(34px, 10vw, 42px);
+        font-size: clamp(29px, 8vw, 36px);
 
-        line-height: 1.08;
+        line-height: 1.1;
 
-        letter-spacing: -2px;
+        letter-spacing: -1.8px;
 
-        margin-bottom: 22px;
+        margin-bottom: 18px;
+      }
+
+      html[dir="rtl"] .work-body h3 {
+        font-size: clamp(28px, 8vw, 35px);
+
+        line-height: 1.35;
       }
 
       .work-tags {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
 
-        gap: 7px;
+        gap: 6px;
       }
 
       .work-tag {
         padding: 7px 9px;
+
+        font-size: 8px;
+      }
+
+      html[dir="rtl"] .work-tag {
+        font-size: 10px;
+      }
+
+      .proof-block {
+        margin-top: 10px;
+
+        margin-bottom: 26px;
       }
 
       .work-case-grid {
@@ -1680,13 +1883,21 @@
 
         gap: 18px;
 
-        margin-top: 25px;
+        margin-top: 28px;
       }
 
       .case-block {
-        padding-top: 15px;
+        padding-top: 14px;
 
-        padding-bottom: 8px;
+        padding-bottom: 5px;
+      }
+
+      .case-block h4 {
+        font-size: 9px;
+      }
+
+      html[dir="rtl"] .case-block h4 {
+        font-size: 11px;
       }
 
       .case-block p {
@@ -1700,23 +1911,23 @@
 
       .copy-sample,
       .script-sample {
-        margin-top: 30px;
-
         padding: 22px;
       }
 
       .copy-ar {
-        font-size: 20px;
+        font-size: 19px;
 
-        line-height: 1.8;
+        line-height: 1.75;
+      }
+
+      .script-copy {
+        font-size: 16px;
+
+        line-height: 1.85;
       }
 
 
-      /* ECOM */
-
-      .ecom-sample {
-        margin-top: 30px;
-      }
+      /* E-COMMERCE */
 
       .ecom-grid {
         grid-template-columns: 1fr;
@@ -1740,36 +1951,44 @@
         border-bottom: 0;
       }
 
+      .ecom-title-example {
+        font-size: 17px !important;
+      }
+
 
       /* VISUALS */
 
       .work-visual {
-        margin-top: 30px;
+        width: 100%;
       }
 
       .ramadan-visual {
-        width: 88%;
-
-        margin: 30px auto 0;
+        width: 100%;
       }
 
 
-      /* CONCEPT */
+      /* CONCEPT LAB */
 
       .concept-lab {
-        margin-top: 80px;
+        margin-top: 70px;
 
-        padding-top: 55px;
+        padding-top: 48px;
       }
 
       .concept-heading {
-        font-size: clamp(42px, 12vw, 50px);
+        font-size: clamp(34px, 9vw, 42px);
 
-        letter-spacing: -2.5px;
+        line-height: 1.08;
+
+        letter-spacing: -2px;
+      }
+
+      html[dir="rtl"] .concept-heading {
+        line-height: 1.35;
       }
 
       .concept-intro {
-        margin-bottom: 38px;
+        margin-bottom: 32px;
       }
 
       .concept-grid {
@@ -1779,19 +1998,19 @@
       .concept-card {
         min-height: auto;
 
-        padding: 27px;
+        padding: 25px;
       }
 
       .concept-number {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
       }
 
       .concept-card h4 {
-        font-size: 25px;
+        font-size: 23px;
       }
 
       .concept-link {
-        margin-top: 35px;
+        margin-top: 30px;
 
         padding-top: 0;
       }
@@ -1800,22 +2019,35 @@
       /* FOOTER */
 
       footer {
-        padding: 78px 6vw;
+        padding: 70px 6vw;
       }
 
       footer h2 {
-        font-size: clamp(52px, 15vw, 67px);
+        font-size: clamp(42px, 12vw, 58px);
 
-        letter-spacing: -4px;
+        line-height: 1.05;
+
+        letter-spacing: -3px;
+      }
+
+      html[dir="rtl"] footer h2 {
+        line-height: 1.3;
+      }
+
+      .footer-intro {
+        font-size: 15px;
       }
 
       .footer-actions {
         flex-direction: column;
+
         align-items: flex-start;
+
+        gap: 18px;
       }
 
       .copyright {
-        margin-top: 75px;
+        margin-top: 65px;
       }
 
     }
@@ -1857,8 +2089,9 @@
         font-size: 8px;
       }
 
-      .hero-text {
-        padding-top: 64px;
+      .hero-text,
+      html[dir="rtl"] .hero-text {
+        padding-top: 44px;
       }
 
     }
@@ -2032,6 +2265,7 @@
 
 
         </div>
+
 
       </div>
 
@@ -2359,11 +2593,6 @@
          SELECTED WORK
     ========================= -->
 
-    <!-- IMPORTANT:
-         No reveal class here.
-         This prevents the mobile disappearing bug.
-    -->
-
     <section
       class="section"
       id="work"
@@ -2469,6 +2698,23 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="work-visual">
+
+                <img
+                  src="work-localization.png"
+                  alt="English master message and Arabic campaign adaptation"
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -2518,17 +2764,6 @@
 
               </div>
 
-
-            </div>
-
-
-
-            <div class="work-visual">
-
-              <img
-                src="work-localization.png"
-                alt="English master message and Arabic campaign adaptation"
-              >
 
             </div>
 
@@ -2595,6 +2830,103 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="ecom-sample">
+
+
+                <div
+                  class="ecom-header"
+                  data-i18n="ecomHeader"
+                >
+                  Anonymized Marketplace Content Structure
+                </div>
+
+
+
+                <div class="ecom-grid">
+
+
+                  <div class="ecom-block">
+
+                    <h4 data-i18n="productTitleLabel">
+                      Product Title
+                    </h4>
+
+                    <p
+                      class="ecom-title-example"
+                      data-i18n="productTitleExample"
+                    >
+                      Creamy Chili Cheese Sauce, 425 ml —
+                      Rich, Smooth & Versatile
+                    </p>
+
+                  </div>
+
+
+
+                  <div class="ecom-block">
+
+                    <h4 data-i18n="benefitsLabel">
+                      Key Benefits
+                    </h4>
+
+                    <p data-i18n="benefitsExample">
+                      Rich, creamy texture with a mild spicy kick.
+                      Designed for dipping, spreading, drizzling,
+                      and adding flavour to everyday meals.
+                    </p>
+
+                  </div>
+
+
+
+                  <div class="ecom-block">
+
+                    <h4 data-i18n="descriptionLabel">
+                      Long Description
+                    </h4>
+
+                    <p data-i18n="descriptionExample">
+                      A fuller product story connects texture,
+                      flavour, practical uses, and convenience,
+                      helping shoppers imagine how the product
+                      fits naturally into their everyday routine.
+                    </p>
+
+                  </div>
+
+
+
+                  <div class="ecom-block">
+
+                    <h4 data-i18n="searchTermsLabel">
+                      Search Terms
+                    </h4>
+
+                    <p
+                      class="ecom-keywords"
+                      data-i18n="searchTermsExample"
+                    >
+                      cheese sauce · creamy dip · chili cheese sauce ·
+                      sandwich sauce · burger sauce · dipping sauce ·
+                      everyday meals
+                    </p>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -2641,97 +2973,6 @@
                   while benefits-led language turns product details
                   into information that feels useful to the shopper.
                 </p>
-
-              </div>
-
-
-            </div>
-
-
-
-            <div class="ecom-sample">
-
-
-              <div
-                class="ecom-header"
-                data-i18n="ecomHeader"
-              >
-                Anonymized Marketplace Content Structure
-              </div>
-
-
-
-              <div class="ecom-grid">
-
-
-                <div class="ecom-block">
-
-                  <h4 data-i18n="productTitleLabel">
-                    Product Title
-                  </h4>
-
-                  <p
-                    class="ecom-title-example"
-                    data-i18n="productTitleExample"
-                  >
-                    Creamy Chili Cheese Sauce, 425 ml —
-                    Rich, Smooth & Versatile
-                  </p>
-
-                </div>
-
-
-
-                <div class="ecom-block">
-
-                  <h4 data-i18n="benefitsLabel">
-                    Key Benefits
-                  </h4>
-
-                  <p data-i18n="benefitsExample">
-                    Rich, creamy texture with a mild spicy kick.
-                    Designed for dipping, spreading, drizzling,
-                    and adding flavour to everyday meals.
-                  </p>
-
-                </div>
-
-
-
-                <div class="ecom-block">
-
-                  <h4 data-i18n="descriptionLabel">
-                    Long Description
-                  </h4>
-
-                  <p data-i18n="descriptionExample">
-                    A fuller product story connects texture,
-                    flavour, practical uses, and convenience,
-                    helping shoppers imagine how the product
-                    fits naturally into their everyday routine.
-                  </p>
-
-                </div>
-
-
-
-                <div class="ecom-block">
-
-                  <h4 data-i18n="searchTermsLabel">
-                    Search Terms
-                  </h4>
-
-                  <p
-                    class="ecom-keywords"
-                    data-i18n="searchTermsExample"
-                  >
-                    cheese sauce · creamy dip · chili cheese sauce ·
-                    sandwich sauce · burger sauce · dipping sauce ·
-                    everyday meals
-                  </p>
-
-                </div>
-
 
               </div>
 
@@ -2802,6 +3043,98 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="copy-sample">
+
+
+                <div class="copy-group">
+
+
+                  <div
+                    class="copy-subtitle"
+                    data-i18n="adaptationLinesLabel"
+                  >
+                    Selected Adaptation Lines
+                  </div>
+
+
+                  <div
+                    class="copy-ar copy-lines"
+                    dir="rtl"
+                    lang="ar"
+                  >
+
+                    <p>
+                      العب بقوة، ونظف بسهولة.
+                    </p>
+
+                    <p>
+                      ثلاثي القوة جاهز للعب.
+                    </p>
+
+                    <p>
+                      الدهون، الأوساخ والجير خارج اللعبة.
+                    </p>
+
+                    <p>
+                      لا رحمة للدهون.
+                    </p>
+
+                    <p>
+                      الساحة نظيفة في ثواني.
+                    </p>
+
+                  </div>
+
+
+                </div>
+
+
+
+                <div class="copy-group">
+
+
+                  <div
+                    class="copy-subtitle"
+                    data-i18n="conceptLinesLabel"
+                  >
+                    Additional Concept Lines
+                  </div>
+
+
+                  <div
+                    class="copy-ar copy-lines"
+                    dir="rtl"
+                    lang="ar"
+                  >
+
+                    <p>
+                      قلبك محتار؟ خذ فرقعة من كل نكهة.
+                    </p>
+
+                    <p>
+                      رجعوا... وخطفوا النكهة.
+                    </p>
+
+                    <p>
+                      الهيبة... بطعم النكهة الحارة.
+                    </p>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -2847,92 +3180,6 @@
                   but the Arabic copy feels written for the audience
                   rather than translated for them.
                 </p>
-
-              </div>
-
-
-            </div>
-
-
-
-            <div class="copy-sample">
-
-
-              <div class="copy-group">
-
-
-                <div
-                  class="copy-subtitle"
-                  data-i18n="adaptationLinesLabel"
-                >
-                  Selected Adaptation Lines
-                </div>
-
-
-                <div
-                  class="copy-ar copy-lines"
-                  dir="rtl"
-                  lang="ar"
-                >
-
-                  <p>
-                    العب بقوة، ونظف بسهولة.
-                  </p>
-
-                  <p>
-                    ثلاثي القوة جاهز للعب.
-                  </p>
-
-                  <p>
-                    الدهون، الأوساخ والجير خارج اللعبة.
-                  </p>
-
-                  <p>
-                    لا رحمة للدهون.
-                  </p>
-
-                  <p>
-                    الساحة نظيفة في ثواني.
-                  </p>
-
-                </div>
-
-
-              </div>
-
-
-
-              <div class="copy-group">
-
-
-                <div
-                  class="copy-subtitle"
-                  data-i18n="conceptLinesLabel"
-                >
-                  Additional Concept Lines
-                </div>
-
-
-                <div
-                  class="copy-ar copy-lines"
-                  dir="rtl"
-                  lang="ar"
-                >
-
-                  <p>
-                    قلبك محتار؟ خذ فرقعة من كل نكهة.
-                  </p>
-
-                  <p>
-                    رجعوا... وخطفوا النكهة.
-                  </p>
-
-                  <p>
-                    الهيبة... بطعم النكهة الحارة.
-                  </p>
-
-                </div>
-
 
               </div>
 
@@ -3002,6 +3249,23 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="work-visual">
+
+                <img
+                  src="work-before-after.png"
+                  alt="Arabic copy before and after rework"
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -3054,17 +3318,6 @@
             </div>
 
 
-
-            <div class="work-visual">
-
-              <img
-                src="work-before-after.png"
-                alt="Arabic copy before and after rework"
-              >
-
-            </div>
-
-
           </div>
 
 
@@ -3091,7 +3344,7 @@
               class="work-category"
               data-i18n="p5Category"
             >
-              Scriptwriting & Social Video Concept
+              Saudi Social Video Script
             </div>
 
 
@@ -3127,6 +3380,64 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="script-sample">
+
+
+                <div
+                  class="script-label"
+                  data-i18n="sceneExcerpt"
+                >
+                  Scene Excerpt
+                </div>
+
+
+                <div
+                  class="script-copy"
+                  dir="rtl"
+                  lang="ar"
+                >
+
+                  <p>
+                    <strong>المشهد:</strong>
+                    لحظة رومانسية، وهي تنتظر منه الكلام الواثق اللي وعدها به.
+                  </p>
+
+                  <p>
+                    هي: يلا حبي، ورّني...
+                    إنت الرومانسي الرايق اللي ما يهتز.
+                  </p>
+
+                  <p>
+                    هو: نور... قلبي، لبّى عيونك...
+                  </p>
+
+                  <p>
+                    هي: هل؟
+                  </p>
+
+                  <p>
+                    هو يحاول يكمل... ويتلخبط أكثر.
+                  </p>
+
+                  <p>
+                    <strong>Product beat:</strong><br>
+                    صوت من خلف الكاميرا:
+                    اشرب وكمل... لا تخرب اللحظة.
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -3180,58 +3491,6 @@
             </div>
 
 
-
-            <div class="script-sample">
-
-
-              <div
-                class="script-label"
-                data-i18n="sceneExcerpt"
-              >
-                Scene Excerpt
-              </div>
-
-
-              <div
-                class="script-copy"
-                dir="rtl"
-                lang="ar"
-              >
-
-                <p>
-                  <strong>المشهد:</strong>
-                  لحظة رومانسية، وهي تنتظر منه الكلام الواثق اللي وعدها به.
-                </p>
-
-                <p>
-                  هي: يلا حبي، ورّني...
-                  إنت الرومانسي الرايق اللي ما يهتز.
-                </p>
-
-                <p>
-                  هو: نور... قلبي، لبّى عيونك...
-                </p>
-
-                <p>
-                  هي: هل؟
-                </p>
-
-                <p>
-                  هو يحاول يكمل... ويتلخبط أكثر.
-                </p>
-
-                <p>
-                  <strong>Product beat:</strong><br>
-                  صوت من خلف الكاميرا:
-                  اشرب وكمل... لا تخرب اللحظة.
-                </p>
-
-              </div>
-
-
-            </div>
-
-
           </div>
 
 
@@ -3258,7 +3517,7 @@
               class="work-category"
               data-i18n="p6Category"
             >
-              Self-Initiated Ramadan Campaign · Not Commissioned
+              Saudi Ramadan F&B Campaign Concept
             </div>
 
 
@@ -3298,6 +3557,73 @@
             </div>
 
 
+            <!-- PROOF FIRST -->
+
+            <div class="proof-block">
+
+              <div class="work-visual ramadan-visual">
+
+                <img
+                  src="work-ramadan-campaign.png"
+                  alt="Self-initiated Ramadan food campaign concept"
+                >
+
+              </div>
+
+            </div>
+
+
+
+            <div class="proof-block">
+
+              <div class="copy-sample">
+
+
+                <div
+                  class="copy-label"
+                  data-i18n="bigIdeaLabel"
+                >
+                  Big Idea & Selected Copy
+                </div>
+
+
+                <div
+                  class="copy-ar copy-lines"
+                  dir="rtl"
+                  lang="ar"
+                >
+
+                  <p>
+                    <strong>
+                      غبقة على جوك
+                    </strong>
+                  </p>
+
+                  <p>
+                    بعد صلاة التراويح وقبل السحور تحلى الغبقة.
+                  </p>
+
+                  <p>
+                    جمع ربعك والغبقة علينا.
+                  </p>
+
+                  <p>
+                    ما تروح العزومة ويدك تطوطح.
+                  </p>
+
+                  <p>
+                    دش عليهم ببوكس غبقة ترضي جوهم.
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <!-- THINKING AFTER PROOF -->
 
             <div class="work-case-grid">
 
@@ -3345,63 +3671,6 @@
                   social content, competitions,
                   influencer storytelling, packaging,
                   and in-branch experiences.
-                </p>
-
-              </div>
-
-
-            </div>
-
-
-
-            <div class="work-visual ramadan-visual">
-
-              <img
-                src="work-ramadan-campaign.png"
-                alt="Self-initiated Ramadan food campaign concept"
-              >
-
-            </div>
-
-
-
-            <div class="copy-sample">
-
-
-              <div
-                class="copy-label"
-                data-i18n="bigIdeaLabel"
-              >
-                Big Idea & Selected Copy
-              </div>
-
-
-              <div
-                class="copy-ar copy-lines"
-                dir="rtl"
-                lang="ar"
-              >
-
-                <p>
-                  <strong>
-                    غبقة على جوك
-                  </strong>
-                </p>
-
-                <p>
-                  بعد صلاة التراويح وقبل السحور تحلى الغبقة.
-                </p>
-
-                <p>
-                  جمع ربعك والغبقة علينا.
-                </p>
-
-                <p>
-                  ما تروح العزومة ويدك تطوطح.
-                </p>
-
-                <p>
-                  دش عليهم ببوكس غبقة ترضي جوهم.
                 </p>
 
               </div>
@@ -3695,9 +3964,7 @@
           rel="noopener noreferrer"
           class="footer-link"
         >
-
           LinkedIn ↗
-
         </a>
 
 
@@ -3724,6 +3991,34 @@
 
 
   </main>
+
+
+
+  <!-- =========================
+       LIGHTBOX
+  ========================= -->
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+  >
+
+    <button
+      class="lightbox-close"
+      id="lightbox-close"
+      aria-label="Close image"
+    >
+      ×
+    </button>
+
+    <img
+      id="lightbox-image"
+      src=""
+      alt=""
+    >
+
+  </div>
 
 
 
@@ -4039,7 +4334,7 @@
 
 
         p5Category:
-          "Scriptwriting & Social Video Concept",
+          "Saudi Social Video Script",
 
         p5Title:
           "Turning a product moment into a story.",
@@ -4068,7 +4363,7 @@
 
 
         p6Category:
-          "Self-Initiated Ramadan Campaign · Not Commissioned",
+          "Saudi Ramadan F&B Campaign Concept · Self-Initiated",
 
         p6Title:
           "Turning a seasonal moment into a full brand experience.",
@@ -4161,7 +4456,6 @@
 
       /* =========================
          ARABIC
-         Gulf-white / light Saudi tone
       ========================= */
 
       ar: {
@@ -4170,14 +4464,14 @@
           "علا عبد الدايم | كتابة إعلانية واستراتيجية محتوى عربي",
 
         metaDescription:
-          "كاتبة إعلانات واستراتيجية محتوى عربي بخبرة في الحملات والتوطين والتجارة الإلكترونية والمحتوى الموجه للجمهور الخليجي.",
+          "كاتبة إعلانات عربية ومتخصصة في استراتيجية المحتوى، بخبرة في الحملات والتوطين والتجارة الإلكترونية والمحتوى الموجه للجمهور الخليجي.",
 
 
         navAbout:
           "عني",
 
         navServices:
-          "وش أسوي",
+          "الخدمات",
 
         navWork:
           "الشغل",
@@ -4190,7 +4484,7 @@
           "علا عبد الدايم",
 
         heroRole:
-          "كاتبة إعلانات عربية واستراتيجية محتوى",
+          "كاتبة إعلانات عربية ومتخصصة في استراتيجية المحتوى",
 
         heroIntro:
           "أحوّل الفكرة لكلام عربي يوصل مثل ما المفروض يوصل.",
@@ -4221,17 +4515,17 @@
           "أحوّل أفكار البراندات إلى محتوى عربي طبيعي، قريب، ومكتوب للناس اللي يخاطبهم فعلًا.",
 
         aboutP1:
-          "أنا كاتبة إعلانات واستراتيجية محتوى بخبرة تتجاوز 7 سنوات في الإعلانات، السوشيال ميديا، الحملات الرقمية، التجارة الإلكترونية، السكربتات، محتوى المنتجات والتوطين.",
+          "عندي خبرة تتجاوز 7 سنوات في الإعلانات، السوشيال ميديا، الحملات الرقمية، التجارة الإلكترونية، السكربتات، محتوى المنتجات والتوطين.",
 
         aboutP2:
-          "أشتغل بالفصحى والمصري والسعودي والخليجي، وأتعامل مع التوطين باعتباره إعادة كتابة للفكرة بما يناسب ثقافة الجمهور وطريقته في الكلام، مو مجرد ترجمة.",
+          "أكتب بالفصحى والمصري والسعودي والخليجي، وأتعامل مع التوطين باعتباره إعادة كتابة للفكرة بما يناسب ثقافة الجمهور وطريقته في الكلام، وليس مجرد ترجمة.",
 
         aboutSignature:
           "أفكر باستراتيجية. أكتب بإبداع. وأوطّن بذكاء.",
 
 
         servicesLabel:
-          "وش أسوي",
+          "الخدمات",
 
         servicesTitle:
           "من الفكرة... لمحتوى يوصل ويشتغل.",
@@ -4269,7 +4563,7 @@
           "محتوى التجارة الإلكترونية",
 
         service5Desc:
-          "وصف منتجات، صفحات بيع، فوائد واضحة ومحتوى يساعد المتسوق ياخذ قراره.",
+          "وصف منتجات، صفحات بيع، فوائد واضحة ومحتوى يساعد المتسوق على اتخاذ قراره.",
 
 
         service6Title:
@@ -4323,19 +4617,19 @@
 
 
         p1Category:
-          "توطين عربي وتكييف حملات",
+          "توطين عربي وتكييف حملة",
 
         p1Title:
           "من رسالة عالمية... لعربي طبيعي.",
 
         p1Brief:
-          "تكييف حملة عالمية لأجهزة منزلية إلى العربية من غير ما ننقل تركيب الجملة الإنجليزية كلمة بكلمة.",
+          "تكييف حملة عالمية لأجهزة منزلية إلى العربية من غير نقل تركيب الجملة الإنجليزية كلمة بكلمة.",
 
         p1Thinking:
           "نحافظ على وعد المنتج بالمساحة والمرونة، لكن نصيغه بلغة أقرب للحياة اليومية والطريقة الطبيعية اللي ممكن تنقال فيها الفائدة بالعربي.",
 
         p1Why:
-          "التوطين هنا يحافظ على الفكرة مو على الجملة، ويحوّل الميزة من معلومة تقنية إلى فائدة أقرب للناس.",
+          "التوطين هنا يحافظ على الفكرة، مو على الجملة، ويحوّل الميزة من معلومة تقنية إلى فائدة أقرب للناس.",
 
 
         tagEcommerce:
@@ -4403,7 +4697,7 @@
 
 
         p3Category:
-          "تكييف حملات مرتبطة بالترفيه",
+          "تكييف حملة مرتبطة بالترفيه",
 
         p3Title:
           "أخلي فكرة الحملة تشتغل بالعربي... مو بس أترجم السطر.",
@@ -4462,7 +4756,7 @@
 
 
         p5Category:
-          "سكربت وفكرة فيديو للسوشيال",
+          "سيناريو فيديو باللهجة السعودية",
 
         p5Title:
           "أحوّل لحظة المنتج إلى قصة.",
@@ -4491,7 +4785,7 @@
 
 
         p6Category:
-          "مقترح حملة رمضانية شخصية · غير منفّذة",
+          "مقترح حملة رمضانية للسوق السعودي · شخصي",
 
         p6Title:
           "من لحظة موسمية... لتجربة براند كاملة.",
@@ -4542,7 +4836,7 @@
           "أربع أصوات. منتج واحد.",
 
         concept1Text:
-          "نفس سماعة الرأس مكتوبة بأربع أصوات مختلفة، كتجربة في كيف يغيّر الصوت والزواية المعنى العاطفي لنفس المنتج.",
+          "نفس سماعة الرأس مكتوبة بأربع أصوات مختلفة، كتجربة في كيف يغيّر الصوت والزاوية المعنى العاطفي لنفس المنتج.",
 
 
         concept2Title:
@@ -4762,9 +5056,9 @@
 
         },
         {
-          threshold: 0.08,
+          threshold: 0.05,
           rootMargin:
-            "0px 0px -6% 0px"
+            "0px 0px -4% 0px"
         }
       );
 
@@ -4937,6 +5231,136 @@
         sectionObserver.observe(
           section
         );
+
+      }
+    );
+
+
+
+    /* =========================
+       IMAGE LIGHTBOX
+    ========================= */
+
+    const lightbox =
+      document.getElementById(
+        "lightbox"
+      );
+
+
+    const lightboxImage =
+      document.getElementById(
+        "lightbox-image"
+      );
+
+
+    const lightboxClose =
+      document.getElementById(
+        "lightbox-close"
+      );
+
+
+    const zoomableImages =
+      document.querySelectorAll(
+        ".work-visual img"
+      );
+
+
+    zoomableImages.forEach(
+      (image) => {
+
+        image.addEventListener(
+          "click",
+          () => {
+
+            lightboxImage.src =
+              image.src;
+
+
+            lightboxImage.alt =
+              image.alt;
+
+
+            lightbox.classList.add(
+              "open"
+            );
+
+
+            lightbox.setAttribute(
+              "aria-hidden",
+              "false"
+            );
+
+
+            document.body.style.overflow =
+              "hidden";
+
+          }
+        );
+
+      }
+    );
+
+
+    function closeLightbox() {
+
+      lightbox.classList.remove(
+        "open"
+      );
+
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+
+      lightboxImage.src =
+        "";
+
+
+      document.body.style.overflow =
+        "";
+
+    }
+
+
+    lightboxClose.addEventListener(
+      "click",
+      closeLightbox
+    );
+
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (
+          event.target === lightbox ||
+          event.target === lightboxImage
+        ) {
+
+          closeLightbox();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape" &&
+          lightbox.classList.contains(
+            "open"
+          )
+        ) {
+
+          closeLightbox();
+
+        }
 
       }
     );
