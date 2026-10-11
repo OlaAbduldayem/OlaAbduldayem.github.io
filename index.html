@@ -58,10 +58,6 @@
 
   <style>
 
-    /* =========================
-       CUSTOM ARABIC FONT
-    ========================= */
-
     @font-face {
       font-family: "Thmanyah Sans";
       src: url("thmanyahsans-Regular.woff2") format("woff2");
@@ -78,26 +74,15 @@
       font-display: swap;
     }
 
-
-    /* =========================
-       VARIABLES
-    ========================= */
-
     :root {
       --bg: #f7f7f5;
       --text: #111111;
       --muted: #555555;
       --soft: #777777;
       --line: #d5d5d5;
-
       --accent: #a63a32;
       --accent-dark: #842e28;
     }
-
-
-    /* =========================
-       RESET
-    ========================= */
 
     * {
       margin: 0;
@@ -112,12 +97,7 @@
     body {
       background: var(--bg);
       color: var(--text);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       overflow-x: hidden;
     }
 
@@ -143,11 +123,6 @@
     footer {
       scroll-margin-top: 95px;
     }
-
-
-    /* =========================
-       ARABIC MODE
-    ========================= */
 
     html[dir="rtl"] body {
       font-family:
@@ -188,37 +163,22 @@
       letter-spacing: 0;
     }
 
-
-    /* =========================
-       NAVIGATION
-    ========================= */
-
     nav {
       position: fixed;
-
       top: 0;
       left: 0;
-
       width: 100%;
       height: 72px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 24px;
-
       padding: 0 5vw;
-
       background: rgba(247, 247, 245, 0.96);
-
       border-bottom: 1px solid #ddd;
-
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-
       z-index: 1000;
-
       transition:
         transform 0.28s ease,
         box-shadow 0.28s ease;
@@ -235,9 +195,7 @@
     .logo {
       font-size: 18px;
       font-weight: 700;
-
       letter-spacing: -0.5px;
-
       transition:
         color 0.25s ease,
         opacity 0.25s ease;
@@ -250,30 +208,22 @@
     .nav-right {
       display: flex;
       align-items: center;
-
       gap: 16px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-
       gap: 8px;
-
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.4px;
     }
 
     .nav-links a {
       padding: 9px 12px;
-
       border: 1px solid #d2d2d2;
-
       white-space: nowrap;
-
       transition:
         color 0.25s ease,
         border-color 0.25s ease,
@@ -286,39 +236,23 @@
       border-color: var(--accent);
     }
 
-
-    /* =========================
-       LANGUAGE SWITCH
-    ========================= */
-
     .language-switch {
       display: flex;
       align-items: center;
-
       direction: ltr;
-
       border: 1px solid #bbb;
-
       padding: 3px;
-
       background: transparent;
     }
 
     .language-switch button {
       border: 0;
-
       padding: 7px 9px;
-
       background: transparent;
-
       color: #777;
-
       font-size: 9px;
-
       letter-spacing: 1px;
-
       cursor: pointer;
-
       transition:
         background 0.2s ease,
         color 0.2s ease;
@@ -338,11 +272,6 @@
       color: #aaa;
     }
 
-
-    /* =========================
-       ACCESSIBILITY
-    ========================= */
-
     .nav-links a:focus-visible,
     .button:focus-visible,
     .concept-link:focus-visible,
@@ -353,29 +282,18 @@
       outline-offset: 4px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
       min-height: 100vh;
-
       padding-top: 72px;
-
       display: grid;
-
       grid-template-columns: 45% 55%;
     }
 
     .hero-text {
       min-width: 0;
-
       display: flex;
       flex-direction: column;
-
       justify-content: center;
-
       padding: 6vw 4vw 6vw 7vw;
     }
 
@@ -385,107 +303,69 @@
 
     .hero-text h1 {
       max-width: 100%;
-
-      font-size: clamp(54px, 5.2vw, 76px);
-
-      line-height: 0.9;
-
-      letter-spacing: -4.5px;
-
+      font-size: clamp(48px, 4.6vw, 66px);
+      line-height: 0.94;
+      letter-spacing: -4px;
       font-weight: 700;
-
       margin-bottom: 28px;
     }
 
     .role {
       font-size: 20px;
-
       line-height: 1.45;
-
       margin-bottom: 20px;
     }
 
     .intro {
       max-width: 470px;
-
       font-size: 17px;
-
       line-height: 1.75;
-
       color: #333;
-
       margin-bottom: 25px;
     }
 
     .experience {
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.7px;
-
       margin-bottom: 14px;
     }
 
     .availability {
       display: flex;
       align-items: center;
-
       gap: 9px;
-
       margin-bottom: 30px;
-
       font-size: 10px;
-
       line-height: 1.5;
-
       text-transform: uppercase;
-
       letter-spacing: 1.25px;
-
       color: #666;
     }
 
     .availability-dot {
       width: 7px;
       height: 7px;
-
       flex: 0 0 7px;
-
       border-radius: 50%;
-
       background: var(--accent);
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-
       gap: 10px;
     }
 
-
-    /* =========================
-       BUTTONS
-    ========================= */
-
     .button {
       width: fit-content;
-
       padding: 14px 22px;
-
       border: 1px solid #111;
-
       font-size: 10px;
-
       line-height: 1.4;
-
       text-transform: uppercase;
-
       letter-spacing: 1.4px;
-
       text-align: center;
-
       transition:
         color 0.25s ease,
         background 0.25s ease,
@@ -496,138 +376,92 @@
     html[dir="rtl"] .button {
       text-transform: none;
       letter-spacing: 0;
-
       font-size: 13px;
     }
 
     .button:hover {
       background: var(--accent);
-
       border-color: var(--accent);
-
       color: #fff;
     }
 
     .button:active {
       transform: translateY(1px);
-
       background: var(--accent-dark);
     }
 
     .button.secondary {
       border-color: #bbb;
-
       color: #555;
     }
 
     .button.secondary:hover {
       color: #fff;
-
       border-color: var(--accent);
     }
 
-
-    /* =========================
-       HERO IMAGE
-    ========================= */
-
     .hero-image {
       background: #111;
-
       min-height: calc(100vh - 72px);
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       padding: 5vw;
     }
 
     .hero-image img {
       display: block;
-
       width: 100%;
       height: 100%;
-
       max-height: calc(100vh - 170px);
-
       object-fit: contain;
       object-position: center;
-
       filter: grayscale(100%);
     }
 
-
-    /* =========================
-       GENERAL
-    ========================= */
-
     .section {
       padding: 120px 8vw;
-
       border-top: 1px solid var(--line);
     }
 
     .section-label {
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 2px;
-
       color: #666;
-
       margin-bottom: 40px;
     }
 
     .section-index {
       color: var(--accent);
-
       font-weight: 700;
     }
 
-
-    /* =========================
-       ABOUT
-    ========================= */
-
     .about-grid {
       display: grid;
-
       grid-template-columns: 38% 62%;
-
       gap: 6vw;
-
       align-items: start;
     }
 
     .about-title {
-      font-size: clamp(48px, 5.2vw, 72px);
-
-      line-height: 0.98;
-
-      letter-spacing: -4px;
-
+      font-size: clamp(42px, 4.6vw, 62px);
+      line-height: 1;
+      letter-spacing: -3.4px;
       max-width: 480px;
     }
 
     .about-title span {
       display: block;
-
       font-size: 0.48em;
-
       line-height: 1.2;
-
       letter-spacing: -1.5px;
-
       margin-top: 26px;
-
       max-width: 390px;
     }
 
     html[dir="rtl"] .about-title span {
       letter-spacing: 0;
-
       line-height: 1.55;
     }
 
@@ -637,62 +471,41 @@
 
     .about-content h3 {
       font-size: 32px;
-
       line-height: 1.2;
-
       letter-spacing: -1.5px;
-
       margin-bottom: 26px;
     }
 
     html[dir="rtl"] .about-content h3 {
       letter-spacing: 0;
-
       line-height: 1.55;
     }
 
     .about-content p {
       font-size: 16px;
-
       line-height: 1.9;
-
       color: #444;
-
       margin-bottom: 20px;
     }
 
     .about-signature {
       margin-top: 36px;
-
       font-size: 12px;
-
       text-transform: uppercase;
-
       letter-spacing: 2px;
     }
 
     html[dir="rtl"] .about-signature {
       text-transform: none;
-
       letter-spacing: 0;
-
       font-size: 14px;
     }
 
-
-    /* =========================
-       WHAT I DO
-    ========================= */
-
     .what-title {
       max-width: 950px;
-
-      font-size: clamp(48px, 5.8vw, 82px);
-
-      line-height: 0.98;
-
-      letter-spacing: -4px;
-
+      font-size: clamp(42px, 5vw, 70px);
+      line-height: 1;
+      letter-spacing: -3.2px;
       margin-bottom: 80px;
     }
 
@@ -702,13 +515,9 @@
 
     .service {
       display: grid;
-
       grid-template-columns: 30% 70%;
-
       padding: 28px 0;
-
       border-bottom: 1px solid #ccc;
-
       transition:
         padding-inline-start 0.25s ease,
         background 0.25s ease;
@@ -720,13 +529,9 @@
 
     .service-number {
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
-
       color: #777;
-
       transition: color 0.25s ease;
     }
 
@@ -736,64 +541,42 @@
 
     .service-content h3 {
       font-size: 23px;
-
       font-weight: 500;
-
       margin-bottom: 11px;
     }
 
     .service-content p {
       max-width: 650px;
-
       font-size: 14px;
-
       line-height: 1.75;
-
       color: #555;
     }
 
     .closing-line {
       margin-top: 65px;
-
       max-width: 850px;
-
       font-size: 23px;
-
       line-height: 1.5;
-
       letter-spacing: -0.5px;
     }
 
     html[dir="rtl"] .closing-line {
       letter-spacing: 0;
-
       line-height: 1.8;
     }
 
-
-    /* =========================
-       TRANSITION MICROCOPY
-    ========================= */
-
     .transition-copy {
       margin-top: 72px;
-
       padding-top: 26px;
-
       border-top: 1px solid #111;
-
       max-width: 750px;
-
-      font-size: clamp(24px, 2.7vw, 38px);
-
-      line-height: 1.25;
-
-      letter-spacing: -1.5px;
+      font-size: clamp(22px, 2.3vw, 34px);
+      line-height: 1.3;
+      letter-spacing: -1.2px;
     }
 
     html[dir="rtl"] .transition-copy {
       letter-spacing: 0;
-
       line-height: 1.65;
     }
 
@@ -801,32 +584,19 @@
       color: var(--accent);
     }
 
-
-    /* =========================
-       SELECTED WORK
-    ========================= */
-
     .selected-work-title {
       max-width: 950px;
-
-      font-size: clamp(48px, 5.8vw, 82px);
-
-      line-height: 0.98;
-
-      letter-spacing: -4px;
-
+      font-size: clamp(42px, 5vw, 70px);
+      line-height: 1;
+      letter-spacing: -3.2px;
       margin-bottom: 28px;
     }
 
     .selected-work-intro {
       max-width: 760px;
-
       font-size: 16px;
-
       line-height: 1.8;
-
       color: #444;
-
       margin-bottom: 75px;
     }
 
@@ -840,70 +610,48 @@
 
     .work-card {
       display: grid;
-
       grid-template-columns: 16% 84%;
-
       gap: 4vw;
-
       padding: 70px 0;
-
       border-bottom: 1px solid #ccc;
     }
 
     .work-number {
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.7px;
-
       color: var(--accent);
     }
 
     .work-category {
       margin-bottom: 12px;
-
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.6px;
-
       color: #666;
     }
 
     .work-body h3 {
       max-width: 880px;
-
-      font-size: clamp(34px, 3.8vw, 54px);
-
-      line-height: 1.03;
-
-      letter-spacing: -2.4px;
-
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -2px;
       margin-bottom: 22px;
     }
 
     .work-tags {
       display: flex;
       flex-wrap: wrap;
-
       gap: 8px;
-
       margin-bottom: 34px;
     }
 
     .work-tag {
       padding: 8px 12px;
-
       border: 1px solid #bbb;
-
       font-size: 9px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.2px;
-
       transition:
         border-color 0.25s ease,
         color 0.25s ease;
@@ -911,94 +659,61 @@
 
     .work-tag:hover {
       color: var(--accent);
-
       border-color: var(--accent);
     }
 
     .work-case-grid {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 30px;
-
       margin-top: 38px;
     }
 
     .case-block {
       border-top: 1px solid #111;
-
       padding-top: 16px;
     }
 
     .case-block h4 {
       margin-bottom: 12px;
-
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.6px;
-
       color: var(--accent);
     }
 
     .case-block p {
       font-size: 14px;
-
       line-height: 1.8;
-
       color: #555;
     }
-
-
-    /* =========================
-       WORK PROOF FIRST
-    ========================= */
 
     .proof-block {
       margin-top: 18px;
       margin-bottom: 34px;
     }
 
-
-    /* =========================
-       BLACK COPY BLOCKS
-    ========================= */
-
     .copy-sample {
       margin-top: 0;
-
       padding: 34px;
-
       background: #111;
-
       color: #fff;
     }
 
     .copy-label {
       margin-bottom: 22px;
-
       font-size: 9px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.7px;
-
       color: #aaa;
     }
 
     .copy-ar {
       max-width: 800px;
-
       margin-top: 22px;
-
       font-size: 25px;
-
       line-height: 1.7;
-
       text-align: right;
-
       direction: rtl;
     }
 
@@ -1008,62 +723,41 @@
 
     .copy-group + .copy-group {
       margin-top: 30px;
-
       padding-top: 28px;
-
       border-top: 1px solid #333;
     }
 
     .copy-subtitle {
       margin-bottom: 15px;
-
       font-size: 9px;
-
       color: #aaa;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
     }
 
-
-    /* =========================
-       E-COMMERCE SAMPLE
-    ========================= */
-
     .ecom-sample {
       margin-top: 0;
-
       border: 1px solid #111;
     }
 
     .ecom-header {
       padding: 14px 18px;
-
       background: #111;
-
       color: #fff;
-
       font-size: 9px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.7px;
     }
 
     .ecom-grid {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
     }
 
     .ecom-block {
       min-height: 175px;
-
       padding: 28px;
-
       border-inline-end: 1px solid #ccc;
-
       border-bottom: 1px solid #ccc;
     }
 
@@ -1077,74 +771,49 @@
 
     .ecom-block h4 {
       margin-bottom: 13px;
-
       color: var(--accent);
-
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
     }
 
     .ecom-block p {
       font-size: 14px;
-
       line-height: 1.75;
-
       color: #555;
     }
 
     .ecom-title-example {
       font-size: 19px !important;
-
       line-height: 1.45 !important;
-
       color: #111 !important;
     }
 
     .ecom-keywords {
       font-size: 12px !important;
-
       color: #666 !important;
     }
 
-
-    /* =========================
-       SCRIPT
-    ========================= */
-
     .script-sample {
       margin-top: 0;
-
       padding: 34px;
-
       border: 1px solid #111;
     }
 
     .script-label {
       margin-bottom: 24px;
-
       font-size: 9px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.7px;
-
       color: var(--accent);
     }
 
     .script-copy {
       max-width: 720px;
-
       margin-inline-start: auto;
-
       direction: rtl;
-
       text-align: right;
-
       font-size: 18px;
-
       line-height: 1.9;
     }
 
@@ -1152,32 +821,19 @@
       margin-top: 8px;
     }
 
-
-    /* =========================
-       WORK VISUALS
-    ========================= */
-
     .work-visual {
       margin-top: 0;
-
       width: 100%;
-
       overflow: hidden;
-
       border: 1px solid #111;
-
       background: #111;
-
       cursor: zoom-in;
     }
 
     .work-visual img {
       display: block;
-
       width: 100%;
-
       height: auto;
-
       transition:
         transform 0.3s ease,
         opacity 0.3s ease;
@@ -1185,37 +841,23 @@
 
     .work-visual:hover img {
       transform: scale(1.01);
-
       opacity: 0.96;
     }
 
     .ramadan-visual {
       width: 80%;
-
       margin: 0 auto;
     }
 
-
-    /* =========================
-       IMAGE LIGHTBOX
-    ========================= */
-
     .lightbox {
       position: fixed;
-
       inset: 0;
-
       display: none;
-
       align-items: center;
       justify-content: center;
-
       padding: 30px;
-
       background: rgba(0, 0, 0, 0.92);
-
       z-index: 5000;
-
       cursor: zoom-out;
     }
 
@@ -1225,107 +867,69 @@
 
     .lightbox img {
       max-width: 95vw;
-
       max-height: 92vh;
-
       object-fit: contain;
-
       box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
     }
 
     .lightbox-close {
       position: absolute;
-
       top: 20px;
       right: 25px;
-
       border: 0;
-
       background: transparent;
-
       color: #fff;
-
       font-size: 34px;
-
       line-height: 1;
-
       cursor: pointer;
     }
 
-
-    /* =========================
-       CONCEPT LAB
-    ========================= */
-
     .concept-lab {
       margin-top: 110px;
-
       padding-top: 70px;
-
       border-top: 1px solid #111;
     }
 
     .concept-label {
       margin-bottom: 22px;
-
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 2px;
-
       color: var(--accent);
     }
 
     .concept-heading {
       max-width: 800px;
-
-      font-size: clamp(42px, 4.8vw, 66px);
-
-      line-height: 1;
-
-      letter-spacing: -3px;
-
+      font-size: clamp(36px, 4.1vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -2.4px;
       margin-bottom: 20px;
     }
 
     .concept-intro {
       max-width: 680px;
-
       font-size: 15px;
-
       line-height: 1.8;
-
       color: #555;
-
       margin-bottom: 50px;
     }
 
     .concept-grid {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 1px;
-
       background: #111;
-
       border: 1px solid #111;
     }
 
     .concept-card {
       min-height: 320px;
-
       display: flex;
       flex-direction: column;
-
       background: var(--bg);
-
       padding: 30px;
-
       box-shadow:
         inset 0 -2px 0 transparent;
-
       transition:
         background 0.25s ease,
         box-shadow 0.25s ease;
@@ -1333,63 +937,45 @@
 
     .concept-card:hover {
       background: #fff;
-
       box-shadow:
         inset 0 -2px 0 var(--accent);
     }
 
     .concept-number {
       margin-bottom: 45px;
-
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
-
       color: var(--accent);
     }
 
     .concept-card h4 {
       font-size: 26px;
-
       line-height: 1.15;
-
       letter-spacing: -1px;
-
       margin-bottom: 17px;
     }
 
     html[dir="rtl"] .concept-card h4 {
       letter-spacing: 0;
-
       line-height: 1.5;
     }
 
     .concept-card p {
       font-size: 14px;
-
       line-height: 1.75;
-
       color: #555;
     }
 
     .concept-link {
       width: fit-content;
-
       margin-top: auto;
-
       padding-top: 32px;
       padding-bottom: 5px;
-
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
-
       border-bottom: 1px solid #111;
-
       transition:
         color 0.25s ease,
         border-color 0.25s ease;
@@ -1397,7 +983,6 @@
 
     .concept-link:hover {
       color: var(--accent);
-
       border-color: var(--accent);
     }
 
@@ -1405,16 +990,9 @@
       color: var(--accent);
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
     footer {
       background: #111;
-
       color: #fff;
-
       padding: 105px 8vw;
     }
 
@@ -1428,52 +1006,35 @@
 
     footer h2 {
       max-width: 950px;
-
-      font-size: clamp(55px, 6.6vw, 98px);
-
-      line-height: 0.94;
-
-      letter-spacing: -5px;
-
+      font-size: clamp(48px, 5.5vw, 82px);
+      line-height: 0.98;
+      letter-spacing: -4px;
       margin-bottom: 32px;
     }
 
     .footer-intro {
       max-width: 650px;
-
       margin-bottom: 32px;
-
       color: #bbb;
-
       font-size: 16px;
-
       line-height: 1.7;
     }
 
     .footer-actions {
       display: flex;
-
       flex-wrap: wrap;
-
       align-items: center;
-
       gap: 25px;
     }
 
     .email-link,
     .footer-link {
       display: inline-block;
-
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
-
       border-bottom: 1px solid #fff;
-
       padding-bottom: 8px;
-
       transition:
         color 0.25s ease,
         border-color 0.25s ease;
@@ -1482,43 +1043,29 @@
     html[dir="rtl"] .email-link,
     html[dir="rtl"] .footer-link {
       text-transform: none;
-
       letter-spacing: 0;
-
       font-size: 13px;
     }
 
     .email-link:hover,
     .footer-link:hover {
       color: #e36a5f;
-
       border-color: #e36a5f;
     }
 
     .copyright {
       margin-top: 95px;
-
       font-size: 10px;
-
       color: #888;
-
       text-transform: uppercase;
-
       letter-spacing: 1.5px;
     }
-
-
-    /* =========================
-       ENTRY ANIMATIONS
-    ========================= */
 
     @media (prefers-reduced-motion: no-preference) {
 
       .js .reveal {
         opacity: 0;
-
         transform: translateY(12px);
-
         transition:
           opacity 0.5s ease,
           transform 0.5s ease;
@@ -1526,16 +1073,10 @@
 
       .js .reveal.is-visible {
         opacity: 1;
-
         transform: translateY(0);
       }
 
     }
-
-
-    /* =========================
-       TABLET
-    ========================= */
 
     @media (max-width: 1050px) {
 
@@ -1553,18 +1094,11 @@
 
     }
 
-
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media (max-width: 800px) {
 
       nav {
         height: 62px;
-
         padding: 0 4vw;
-
         gap: 8px;
       }
 
@@ -1578,9 +1112,7 @@
 
       .nav-links {
         gap: 4px;
-
         font-size: 7px;
-
         letter-spacing: 0.8px;
       }
 
@@ -1594,55 +1126,41 @@
 
       .language-switch button {
         padding: 6px 6px;
-
         font-size: 8px;
       }
 
-
-      /* HERO */
-
       .hero {
         display: flex;
-
         flex-direction: column;
-
         padding-top: 62px;
       }
 
       .hero-text,
       html[dir="rtl"] .hero-text {
         min-height: auto;
-
         padding: 52px 6vw 42px;
       }
 
       .hero-text h1 {
-        font-size: clamp(44px, 13vw, 56px);
-
-        line-height: 0.98;
-
-        letter-spacing: -3px;
-
+        font-size: clamp(38px, 11vw, 48px);
+        line-height: 1;
+        letter-spacing: -2.4px;
         margin-bottom: 20px;
       }
 
       html[dir="rtl"] .hero-text h1 {
-        font-size: clamp(43px, 12vw, 54px);
-
-        line-height: 1.2;
+        font-size: clamp(38px, 10.5vw, 48px);
+        line-height: 1.22;
       }
 
       .role {
         font-size: 17px;
-
         margin-bottom: 16px;
       }
 
       .intro {
         font-size: 15px;
-
         line-height: 1.75;
-
         margin-bottom: 20px;
       }
 
@@ -1652,7 +1170,6 @@
 
       .availability {
         font-size: 9px;
-
         margin-bottom: 24px;
       }
 
@@ -1662,34 +1179,25 @@
 
       .hero-actions {
         flex-direction: column;
-
         align-items: stretch;
       }
 
       .button {
         width: 100%;
-
         padding: 13px 18px;
       }
 
       .hero-image {
         min-height: auto;
-
         padding: 8vw 6vw;
       }
 
       .hero-image img {
         width: 100%;
-
         height: auto;
-
         max-height: 68vh;
-
         object-fit: contain;
       }
-
-
-      /* GENERAL */
 
       .section {
         padding: 66px 6vw;
@@ -1697,76 +1205,57 @@
 
       .section-label {
         margin-bottom: 25px;
-
         font-size: 10px;
       }
 
-
-      /* ABOUT */
-
       .about-grid {
         grid-template-columns: 1fr;
-
         gap: 30px;
       }
 
       .about-title {
-        font-size: clamp(39px, 11vw, 48px);
-
-        line-height: 1.04;
-
-        letter-spacing: -2.5px;
+        font-size: clamp(34px, 9.5vw, 42px);
+        line-height: 1.08;
+        letter-spacing: -2px;
       }
 
       .about-title span {
         font-size: 0.52em;
-
         max-width: 380px;
-
         margin-top: 18px;
       }
 
       html[dir="rtl"] .about-title {
-        line-height: 1.22;
+        line-height: 1.25;
       }
 
       .about-content h3 {
         font-size: 24px;
-
         line-height: 1.4;
-
         margin-bottom: 20px;
       }
 
       .about-content p {
         font-size: 15px;
-
         line-height: 1.8;
-
         margin-bottom: 16px;
       }
 
       .about-signature {
         margin-top: 25px;
-
         line-height: 1.6;
       }
 
-
-      /* SERVICES */
-
       .what-title,
       .selected-work-title {
-        font-size: clamp(40px, 11vw, 50px);
-
-        line-height: 1.05;
-
-        letter-spacing: -2.5px;
+        font-size: clamp(34px, 9.5vw, 43px);
+        line-height: 1.08;
+        letter-spacing: -2px;
       }
 
       html[dir="rtl"] .what-title,
       html[dir="rtl"] .selected-work-title {
-        line-height: 1.25;
+        line-height: 1.28;
       }
 
       .what-title {
@@ -1775,9 +1264,7 @@
 
       .service {
         grid-template-columns: 1fr;
-
         gap: 10px;
-
         padding: 22px 0;
       }
 
@@ -1791,38 +1278,28 @@
 
       .service-content p {
         font-size: 14px;
-
         line-height: 1.75;
       }
 
       .closing-line {
         margin-top: 45px;
-
         font-size: 18px;
       }
 
       .transition-copy {
         margin-top: 44px;
-
-        font-size: 23px;
-
-        line-height: 1.4;
+        font-size: 21px;
+        line-height: 1.45;
       }
-
-
-      /* SELECTED WORK */
 
       .selected-work-intro {
         margin-bottom: 45px;
-
         font-size: 15px;
       }
 
       .work-card {
         grid-template-columns: 1fr;
-
         gap: 15px;
-
         padding: 44px 0;
       }
 
@@ -1832,7 +1309,6 @@
 
       .work-category {
         font-size: 10px;
-
         line-height: 1.45;
       }
 
@@ -1841,30 +1317,24 @@
       }
 
       .work-body h3 {
-        font-size: clamp(29px, 8vw, 36px);
-
-        line-height: 1.1;
-
-        letter-spacing: -1.8px;
-
+        font-size: clamp(25px, 7vw, 31px);
+        line-height: 1.15;
+        letter-spacing: -1.3px;
         margin-bottom: 18px;
       }
 
       html[dir="rtl"] .work-body h3 {
-        font-size: clamp(28px, 8vw, 35px);
-
-        line-height: 1.35;
+        font-size: clamp(25px, 7vw, 31px);
+        line-height: 1.38;
       }
 
       .work-tags {
         margin-bottom: 24px;
-
         gap: 6px;
       }
 
       .work-tag {
         padding: 7px 9px;
-
         font-size: 8px;
       }
 
@@ -1874,21 +1344,17 @@
 
       .proof-block {
         margin-top: 10px;
-
         margin-bottom: 26px;
       }
 
       .work-case-grid {
         grid-template-columns: 1fr;
-
         gap: 18px;
-
         margin-top: 28px;
       }
 
       .case-block {
         padding-top: 14px;
-
         padding-bottom: 5px;
       }
 
@@ -1902,12 +1368,8 @@
 
       .case-block p {
         font-size: 14px;
-
         line-height: 1.8;
       }
-
-
-      /* COPY */
 
       .copy-sample,
       .script-sample {
@@ -1916,18 +1378,13 @@
 
       .copy-ar {
         font-size: 19px;
-
         line-height: 1.75;
       }
 
       .script-copy {
         font-size: 16px;
-
         line-height: 1.85;
       }
-
-
-      /* E-COMMERCE */
 
       .ecom-grid {
         grid-template-columns: 1fr;
@@ -1935,11 +1392,8 @@
 
       .ecom-block {
         min-height: 0;
-
         padding: 22px;
-
         border-inline-end: 0;
-
         border-bottom: 1px solid #ccc;
       }
 
@@ -1955,9 +1409,6 @@
         font-size: 17px !important;
       }
 
-
-      /* VISUALS */
-
       .work-visual {
         width: 100%;
       }
@@ -1966,25 +1417,19 @@
         width: 100%;
       }
 
-
-      /* CONCEPT LAB */
-
       .concept-lab {
         margin-top: 70px;
-
         padding-top: 48px;
       }
 
       .concept-heading {
-        font-size: clamp(34px, 9vw, 42px);
-
-        line-height: 1.08;
-
-        letter-spacing: -2px;
+        font-size: clamp(30px, 8vw, 36px);
+        line-height: 1.12;
+        letter-spacing: -1.6px;
       }
 
       html[dir="rtl"] .concept-heading {
-        line-height: 1.35;
+        line-height: 1.38;
       }
 
       .concept-intro {
@@ -1997,7 +1442,6 @@
 
       .concept-card {
         min-height: auto;
-
         padding: 25px;
       }
 
@@ -2011,27 +1455,21 @@
 
       .concept-link {
         margin-top: 30px;
-
         padding-top: 0;
       }
-
-
-      /* FOOTER */
 
       footer {
         padding: 70px 6vw;
       }
 
       footer h2 {
-        font-size: clamp(42px, 12vw, 58px);
-
-        line-height: 1.05;
-
-        letter-spacing: -3px;
+        font-size: clamp(36px, 10vw, 48px);
+        line-height: 1.08;
+        letter-spacing: -2.4px;
       }
 
       html[dir="rtl"] footer h2 {
-        line-height: 1.3;
+        line-height: 1.32;
       }
 
       .footer-intro {
@@ -2040,9 +1478,7 @@
 
       .footer-actions {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 18px;
       }
 
@@ -2051,11 +1487,6 @@
       }
 
     }
-
-
-    /* =========================
-       SMALL MOBILE
-    ========================= */
 
     @media (max-width: 560px) {
 
@@ -2069,19 +1500,16 @@
 
       .nav-right {
         width: 100%;
-
         justify-content: space-between;
       }
 
       .nav-links {
         flex: 1;
-
         justify-content: space-between;
       }
 
       .nav-links a {
         padding: 7px 5px;
-
         font-size: 7px;
       }
 
@@ -2099,65 +1527,29 @@
   </style>
 </head>
 
-
 <body>
-
-
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
 
   <nav id="main-nav">
 
-    <a
-      href="#top"
-      class="logo"
-      aria-label="Back to top"
-    >
+    <a href="#top" class="logo" aria-label="Back to top">
       OA
     </a>
 
-
     <div class="nav-right">
-
 
       <div class="nav-links">
 
-        <a
-          href="#about"
-          data-i18n="navAbout"
-        >
-          About
-        </a>
+        <a href="#about" data-i18n="navAbout">About</a>
 
-        <a
-          href="#what-i-do"
-          data-i18n="navServices"
-        >
-          What I Do
-        </a>
+        <a href="#what-i-do" data-i18n="navServices">What I Do</a>
 
-        <a
-          href="#work"
-          data-i18n="navWork"
-        >
-          Work
-        </a>
+        <a href="#work" data-i18n="navWork">Work</a>
 
-        <a
-          href="#contact"
-          data-i18n="navContact"
-        >
-          Contact
-        </a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
 
       </div>
 
-
-      <div
-        class="language-switch"
-        aria-label="Language"
-      >
+      <div class="language-switch" aria-label="Language">
 
         <button
           type="button"
@@ -2168,9 +1560,7 @@
           EN
         </button>
 
-        <span class="language-divider">
-          |
-        </span>
+        <span class="language-divider">|</span>
 
         <button
           type="button"
@@ -2182,68 +1572,40 @@
 
       </div>
 
-
     </div>
 
   </nav>
 
-
-
   <main id="top">
-
-
-    <!-- =========================
-         HERO
-    ========================= -->
 
     <section class="hero">
 
-
       <div class="hero-text">
-
 
         <h1 data-i18n="heroName">
           Ola Abduldayem
         </h1>
 
-
-        <p
-          class="role"
-          data-i18n="heroRole"
-        >
+        <p class="role" data-i18n="heroRole">
           Arabic Copywriter & Content Strategist
         </p>
 
-
-        <p
-          class="intro"
-          data-i18n="heroIntro"
-        >
+        <p class="intro" data-i18n="heroIntro">
           I turn ideas into Arabic that lands the way it should.
         </p>
 
-
-        <div
-          class="experience"
-          data-i18n="heroExperience"
-        >
+        <div class="experience" data-i18n="heroExperience">
           7+ Years in Arabic Content & Localization
         </div>
 
-
         <div class="availability">
-
           <span class="availability-dot"></span>
-
           <span data-i18n="availability">
             Open to full-time, freelance, remote & GCC opportunities
           </span>
-
         </div>
 
-
         <div class="hero-actions">
-
 
           <a
             href="#work"
@@ -2252,7 +1614,6 @@
           >
             See what I do with an idea.
           </a>
-
 
           <a
             href="Ola-Abduldayem-CV.pdf"
@@ -2263,13 +1624,9 @@
             Download CV ↓
           </a>
 
-
         </div>
 
-
       </div>
-
-
 
       <div class="hero-image">
 
@@ -2280,26 +1637,14 @@
 
       </div>
 
-
     </section>
 
 
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section
-      class="section reveal"
-      id="about"
-    >
-
+    <section class="section reveal" id="about">
 
       <div class="section-label">
 
-        <span class="section-index">
-          01
-        </span>
+        <span class="section-index">01</span>
 
         /
 
@@ -2309,10 +1654,7 @@
 
       </div>
 
-
-
       <div class="about-grid">
-
 
         <div>
 
@@ -2333,16 +1675,12 @@
 
         </div>
 
-
-
         <div class="about-content">
-
 
           <h3 data-i18n="aboutLead">
             I turn brand ideas into Arabic that feels natural,
             relevant, and made for the people it speaks to.
           </h3>
-
 
           <p data-i18n="aboutP1">
             I’m an Arabic Copywriter and Content Strategist
@@ -2351,7 +1689,6 @@
             e-commerce, scripts, product content, and localization.
           </p>
 
-
           <p data-i18n="aboutP2">
             I work across Modern Standard Arabic, Egyptian,
             Saudi, and Gulf Arabic, adapting ideas beyond
@@ -2359,40 +1696,22 @@
             relevant, and true to the audience.
           </p>
 
-
-          <div
-            class="about-signature"
-            data-i18n="aboutSignature"
-          >
+          <div class="about-signature" data-i18n="aboutSignature">
             Think strategy. Write creatively. Localize intelligently.
           </div>
 
-
         </div>
 
-
       </div>
-
 
     </section>
 
 
-
-    <!-- =========================
-         WHAT I DO
-    ========================= -->
-
-    <section
-      class="section reveal"
-      id="what-i-do"
-    >
-
+    <section class="section reveal" id="what-i-do">
 
       <div class="section-label">
 
-        <span class="section-index">
-          02
-        </span>
+        <span class="section-index">02</span>
 
         /
 
@@ -2402,170 +1721,79 @@
 
       </div>
 
-
-      <h2
-        class="what-title"
-        data-i18n="servicesTitle"
-      >
+      <h2 class="what-title" data-i18n="servicesTitle">
         Turning ideas into content that works.
       </h2>
 
-
-
       <div class="services">
 
-
         <div class="service">
-
-          <div class="service-number">
-            01
-          </div>
-
+          <div class="service-number">01</div>
           <div class="service-content">
-
-            <h3 data-i18n="service1Title">
-              Copywriting
-            </h3>
-
+            <h3 data-i18n="service1Title">Copywriting</h3>
             <p data-i18n="service1Desc">
-              Campaign concepts, advertising copy,
-              headlines, social media, and creative content.
+              Campaign concepts, advertising copy, headlines, social media, and creative content.
             </p>
-
           </div>
-
         </div>
 
-
-
         <div class="service">
-
-          <div class="service-number">
-            02
-          </div>
-
+          <div class="service-number">02</div>
           <div class="service-content">
-
-            <h3 data-i18n="service2Title">
-              Arabic Content
-            </h3>
-
+            <h3 data-i18n="service2Title">Arabic Content</h3>
             <p data-i18n="service2Desc">
-              Content that sounds human, purposeful,
-              and tailored to the audience.
+              Content that sounds human, purposeful, and tailored to the audience.
             </p>
-
           </div>
-
         </div>
 
-
-
         <div class="service">
-
-          <div class="service-number">
-            03
-          </div>
-
+          <div class="service-number">03</div>
           <div class="service-content">
-
-            <h3 data-i18n="service3Title">
-              Localization
-            </h3>
-
+            <h3 data-i18n="service3Title">Localization</h3>
             <p data-i18n="service3Desc">
-              Arabic adaptation across MSA, Egyptian,
-              Saudi, and Gulf dialects, beyond literal translation.
+              Arabic adaptation across MSA, Egyptian, Saudi, and Gulf dialects, beyond literal translation.
             </p>
-
           </div>
-
         </div>
 
-
-
         <div class="service">
-
-          <div class="service-number">
-            04
-          </div>
-
+          <div class="service-number">04</div>
           <div class="service-content">
-
-            <h3 data-i18n="service4Title">
-              Content Strategy
-            </h3>
-
+            <h3 data-i18n="service4Title">Content Strategy</h3>
             <p data-i18n="service4Desc">
-              Turning audience insights and brand objectives
-              into content with a clear direction.
+              Turning audience insights and brand objectives into content with a clear direction.
             </p>
-
           </div>
-
         </div>
 
-
-
         <div class="service">
-
-          <div class="service-number">
-            05
-          </div>
-
+          <div class="service-number">05</div>
           <div class="service-content">
-
-            <h3 data-i18n="service5Title">
-              E-commerce Content
-            </h3>
-
+            <h3 data-i18n="service5Title">E-commerce Content</h3>
             <p data-i18n="service5Desc">
-              Product descriptions, listings,
-              benefits-led copy, and conversion-focused content.
+              Product descriptions, listings, benefits-led copy, and conversion-focused content.
             </p>
-
           </div>
-
         </div>
-
-
 
         <div class="service">
-
-          <div class="service-number">
-            06
-          </div>
-
+          <div class="service-number">06</div>
           <div class="service-content">
-
-            <h3 data-i18n="service6Title">
-              Creative Concepts & Scripts
-            </h3>
-
+            <h3 data-i18n="service6Title">Creative Concepts & Scripts</h3>
             <p data-i18n="service6Desc">
-              Ideas, storytelling, campaign scripts,
-              and social-first creative concepts.
+              Ideas, storytelling, campaign scripts, and social-first creative concepts.
             </p>
-
           </div>
-
         </div>
-
 
       </div>
 
-
-
-      <p
-        class="closing-line"
-        data-i18n="servicesClosing"
-      >
+      <p class="closing-line" data-i18n="servicesClosing">
         Different audiences. Different voices.
         One thing stays the same:
         the idea has to feel right in Arabic.
       </p>
-
-
 
       <p class="transition-copy">
 
@@ -2584,26 +1812,14 @@
 
       </p>
 
-
     </section>
 
 
-
-    <!-- =========================
-         SELECTED WORK
-    ========================= -->
-
-    <section
-      class="section"
-      id="work"
-    >
-
+    <section class="section" id="work">
 
       <div class="section-label">
 
-        <span class="section-index">
-          03
-        </span>
+        <span class="section-index">03</span>
 
         /
 
@@ -2613,15 +1829,9 @@
 
       </div>
 
-
-      <h2
-        class="selected-work-title"
-        data-i18n="workTitle"
-      >
+      <h2 class="selected-work-title" data-i18n="workTitle">
         Ideas I’ve helped bring to life.
       </h2>
-
-
 
       <div class="selected-work-intro">
 
@@ -2639,66 +1849,40 @@
       </div>
 
 
-
       <div class="work-list">
 
 
-        <!-- =========================
-             PROJECT 01
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             01 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p1Category"
-            >
+            <div class="work-category" data-i18n="p1Category">
               Arabic Localization & Campaign Adaptation
             </div>
-
 
             <h3 data-i18n="p1Title">
               From global message to natural Arabic.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagLocalization"
-              >
+              <span class="work-tag" data-i18n="tagLocalization">
                 Localization
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagArabicCopy"
-              >
+              <span class="work-tag" data-i18n="tagArabicCopy">
                 Arabic Copywriting
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagCampaignAdaptation"
-              >
+              <span class="work-tag" data-i18n="tagCampaignAdaptation">
                 Campaign Adaptation
               </span>
 
             </div>
-
-
-            <!-- PROOF FIRST -->
 
             <div class="proof-block">
 
@@ -2713,11 +1897,7 @@
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -2732,7 +1912,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -2749,7 +1928,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="whyLabel">
@@ -2764,90 +1942,54 @@
 
               </div>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
-
-        <!-- =========================
-             PROJECT 02
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             02 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p2Category"
-            >
+            <div class="work-category" data-i18n="p2Category">
               E-commerce Product Content
             </div>
-
 
             <h3 data-i18n="p2Title">
               Turning product details into copy built for shoppers and search.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagEcommerce"
-              >
+              <span class="work-tag" data-i18n="tagEcommerce">
                 E-commerce
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagProductDescriptions"
-              >
+              <span class="work-tag" data-i18n="tagProductDescriptions">
                 Product Descriptions
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagSearchContent"
-              >
+              <span class="work-tag" data-i18n="tagSearchContent">
                 Search Content
               </span>
 
             </div>
 
-
-            <!-- PROOF FIRST -->
-
             <div class="proof-block">
 
               <div class="ecom-sample">
 
-
-                <div
-                  class="ecom-header"
-                  data-i18n="ecomHeader"
-                >
+                <div class="ecom-header" data-i18n="ecomHeader">
                   Anonymized Marketplace Content Structure
                 </div>
 
-
-
                 <div class="ecom-grid">
-
 
                   <div class="ecom-block">
 
@@ -2865,8 +2007,6 @@
 
                   </div>
 
-
-
                   <div class="ecom-block">
 
                     <h4 data-i18n="benefitsLabel">
@@ -2880,8 +2020,6 @@
                     </p>
 
                   </div>
-
-
 
                   <div class="ecom-block">
 
@@ -2897,8 +2035,6 @@
                     </p>
 
                   </div>
-
-
 
                   <div class="ecom-block">
 
@@ -2917,19 +2053,13 @@
 
                   </div>
 
-
                 </div>
-
 
               </div>
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -2946,7 +2076,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="thinkingLabel">
@@ -2960,7 +2089,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -2976,134 +2104,77 @@
 
               </div>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
-
-        <!-- =========================
-             PROJECT 03
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             03 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p3Category"
-            >
+            <div class="work-category" data-i18n="p3Category">
               Entertainment-Led Campaign Adaptation
             </div>
-
 
             <h3 data-i18n="p3Title">
               Making the campaign idea work in Arabic,
               not just translating the line.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagMarketingLocalization"
-              >
+              <span class="work-tag" data-i18n="tagMarketingLocalization">
                 Marketing Localization
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagEntertainment"
-              >
+              <span class="work-tag" data-i18n="tagEntertainment">
                 Entertainment
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagCreativeAdaptation"
-              >
+              <span class="work-tag" data-i18n="tagCreativeAdaptation">
                 Creative Adaptation
               </span>
 
             </div>
 
-
-            <!-- PROOF FIRST -->
-
             <div class="proof-block">
 
               <div class="copy-sample">
 
-
                 <div class="copy-group">
 
-
-                  <div
-                    class="copy-subtitle"
-                    data-i18n="adaptationLinesLabel"
-                  >
+                  <div class="copy-subtitle" data-i18n="adaptationLinesLabel">
                     Selected Adaptation Lines
                   </div>
 
-
                   <div
                     class="copy-ar copy-lines"
                     dir="rtl"
                     lang="ar"
                   >
 
-                    <p>
-                      العب بقوة، ونظف بسهولة.
-                    </p>
-
-                    <p>
-                      ثلاثي القوة جاهز للعب.
-                    </p>
-
-                    <p>
-                      الدهون، الأوساخ والجير خارج اللعبة.
-                    </p>
-
-                    <p>
-                      لا رحمة للدهون.
-                    </p>
-
-                    <p>
-                      الساحة نظيفة في ثواني.
-                    </p>
+                    <p>العب بقوة، ونظف بسهولة.</p>
+                    <p>ثلاثي القوة جاهز للعب.</p>
+                    <p>الدهون، الأوساخ والجير خارج اللعبة.</p>
+                    <p>لا رحمة للدهون.</p>
+                    <p>الساحة نظيفة في ثواني.</p>
 
                   </div>
 
-
                 </div>
-
-
 
                 <div class="copy-group">
 
-
-                  <div
-                    class="copy-subtitle"
-                    data-i18n="conceptLinesLabel"
-                  >
+                  <div class="copy-subtitle" data-i18n="conceptLinesLabel">
                     Additional Concept Lines
                   </div>
-
 
                   <div
                     class="copy-ar copy-lines"
@@ -3111,33 +2182,19 @@
                     lang="ar"
                   >
 
-                    <p>
-                      قلبك محتار؟ خذ فرقعة من كل نكهة.
-                    </p>
-
-                    <p>
-                      رجعوا... وخطفوا النكهة.
-                    </p>
-
-                    <p>
-                      الهيبة... بطعم النكهة الحارة.
-                    </p>
+                    <p>قلبك محتار؟ خذ فرقعة من كل نكهة.</p>
+                    <p>رجعوا... وخطفوا النكهة.</p>
+                    <p>الهيبة... بطعم النكهة الحارة.</p>
 
                   </div>
 
-
                 </div>
-
 
               </div>
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -3153,7 +2210,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="thinkingLabel">
@@ -3167,7 +2223,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -3183,73 +2238,44 @@
 
               </div>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
-
-        <!-- =========================
-             PROJECT 04
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             04 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p4Category"
-            >
+            <div class="work-category" data-i18n="p4Category">
               Copy Rework & Content Strategy
             </div>
-
 
             <h3 data-i18n="p4Title">
               Less explanation. More direction.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagCopyEditing"
-              >
+              <span class="work-tag" data-i18n="tagCopyEditing">
                 Copy Editing
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagFintech"
-              >
+              <span class="work-tag" data-i18n="tagFintech">
                 Fintech
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagSaudiArabic"
-              >
+              <span class="work-tag" data-i18n="tagSaudiArabic">
                 Saudi Arabic
               </span>
 
             </div>
-
-
-            <!-- PROOF FIRST -->
 
             <div class="proof-block">
 
@@ -3264,11 +2290,7 @@
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -3284,7 +2306,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="thinkingLabel">
@@ -3298,7 +2319,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -3314,86 +2334,52 @@
 
               </div>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
-
-        <!-- =========================
-             PROJECT 05
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             05 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p5Category"
-            >
+            <div class="work-category" data-i18n="p5Category">
               Saudi Social Video Script
             </div>
-
 
             <h3 data-i18n="p5Title">
               Turning a product moment into a story.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagScriptwriting"
-              >
+              <span class="work-tag" data-i18n="tagScriptwriting">
                 Scriptwriting
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagConceptDevelopment"
-              >
+              <span class="work-tag" data-i18n="tagConceptDevelopment">
                 Concept Development
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagSaudiDialect"
-              >
+              <span class="work-tag" data-i18n="tagSaudiDialect">
                 Saudi Dialect
               </span>
 
             </div>
 
-
-            <!-- PROOF FIRST -->
-
             <div class="proof-block">
 
               <div class="script-sample">
 
-
-                <div
-                  class="script-label"
-                  data-i18n="sceneExcerpt"
-                >
+                <div class="script-label" data-i18n="sceneExcerpt">
                   Scene Excerpt
                 </div>
-
 
                 <div
                   class="script-copy"
@@ -3431,16 +2417,11 @@
 
                 </div>
 
-
               </div>
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -3455,7 +2436,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -3472,7 +2452,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="whyLabel">
@@ -3487,52 +2466,32 @@
 
               </div>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
-
-        <!-- =========================
-             PROJECT 06
-        ========================= -->
-
         <article class="work-card reveal">
-
 
           <div class="work-number">
             06 / 06
           </div>
 
-
           <div class="work-body">
 
-
-            <div
-              class="work-category"
-              data-i18n="p6Category"
-            >
+            <div class="work-category" data-i18n="p6Category">
               Saudi Ramadan F&B Campaign Concept
             </div>
-
 
             <h3 data-i18n="p6Title">
               Turning a seasonal moment into a full brand experience.
             </h3>
 
-
-
             <div class="work-tags">
 
-              <span
-                class="work-tag"
-                data-i18n="tagCampaignStrategy"
-              >
+              <span class="work-tag" data-i18n="tagCampaignStrategy">
                 Campaign Strategy
               </span>
 
@@ -3540,24 +2499,15 @@
                 F&amp;B
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagSaudiAudience"
-              >
+              <span class="work-tag" data-i18n="tagSaudiAudience">
                 Saudi Audience
               </span>
 
-              <span
-                class="work-tag"
-                data-i18n="tagContentConcepts"
-              >
+              <span class="work-tag" data-i18n="tagContentConcepts">
                 Content Concepts
               </span>
 
             </div>
-
-
-            <!-- PROOF FIRST -->
 
             <div class="proof-block">
 
@@ -3572,20 +2522,13 @@
 
             </div>
 
-
-
             <div class="proof-block">
 
               <div class="copy-sample">
 
-
-                <div
-                  class="copy-label"
-                  data-i18n="bigIdeaLabel"
-                >
+                <div class="copy-label" data-i18n="bigIdeaLabel">
                   Big Idea & Selected Copy
                 </div>
-
 
                 <div
                   class="copy-ar copy-lines"
@@ -3594,9 +2537,7 @@
                 >
 
                   <p>
-                    <strong>
-                      غبقة على جوك
-                    </strong>
+                    <strong>غبقة على جوك</strong>
                   </p>
 
                   <p>
@@ -3617,16 +2558,11 @@
 
                 </div>
 
-
               </div>
 
             </div>
 
-
-            <!-- THINKING AFTER PROOF -->
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -3642,7 +2578,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="thinkingLabel">
@@ -3657,7 +2592,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -3675,13 +2609,9 @@
 
               </div>
 
-
             </div>
 
-
-
             <div class="work-case-grid">
-
 
               <div class="case-block">
 
@@ -3698,7 +2628,6 @@
 
               </div>
 
-
               <div class="case-block">
 
                 <h4 data-i18n="contentEcosystem">
@@ -3713,7 +2642,6 @@
                 </p>
 
               </div>
-
 
               <div class="case-block">
 
@@ -3730,53 +2658,30 @@
 
               </div>
 
-
             </div>
-
 
           </div>
 
-
         </article>
-
 
       </div>
 
 
-
-      <!-- =========================
-           CONCEPT LAB
-      ========================= -->
-
       <div class="concept-lab reveal">
 
-
-        <div
-          class="concept-label"
-          data-i18n="conceptLabel"
-        >
+        <div class="concept-label" data-i18n="conceptLabel">
           Concept Lab
         </div>
 
-
-        <h3
-          class="concept-heading"
-          data-i18n="conceptHeading"
-        >
+        <h3 class="concept-heading" data-i18n="conceptHeading">
           Exercises in voice, ideas, and observation.
         </h3>
 
-
-        <p
-          class="concept-intro"
-          data-i18n="conceptIntro"
-        >
+        <p class="concept-intro" data-i18n="conceptIntro">
           Not every idea starts with a brief.
           Some start with a voice, a detail,
           or a question worth exploring.
         </p>
-
-
 
         <div class="concept-grid">
 
@@ -3818,7 +2723,6 @@
           </article>
 
 
-
           <article class="concept-card">
 
             <div class="concept-number">
@@ -3854,7 +2758,6 @@
             </a>
 
           </article>
-
 
 
           <article class="concept-card">
@@ -3893,26 +2796,14 @@
 
           </article>
 
-
         </div>
 
-
       </div>
-
 
     </section>
 
 
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <footer
-      id="contact"
-      class="reveal"
-    >
-
+    <footer id="contact" class="reveal">
 
       <div class="section-label">
 
@@ -3928,26 +2819,18 @@
 
       </div>
 
-
       <h2 data-i18n="contactTitle">
         Got an idea?
         Let’s make it sound right in Arabic.
       </h2>
 
-
-      <p
-        class="footer-intro"
-        data-i18n="contactIntro"
-      >
+      <p class="footer-intro" data-i18n="contactIntro">
         Looking for Arabic copy, localization,
         or content strategy?
         Let’s talk.
       </p>
 
-
-
       <div class="footer-actions">
-
 
         <a
           href="mailto:olaabdeldayem38@gmail.com"
@@ -3956,7 +2839,6 @@
         >
           Email me
         </a>
-
 
         <a
           href="https://www.linkedin.com/in/ola-abduldayem"
@@ -3967,7 +2849,6 @@
           LinkedIn ↗
         </a>
 
-
         <a
           href="Ola-Abduldayem-CV.pdf"
           download="Ola-Abduldayem-CV.pdf"
@@ -3977,26 +2858,16 @@
           Download CV ↓
         </a>
 
-
       </div>
-
-
 
       <div class="copyright">
         © 2026 Ola Abduldayem
       </div>
 
-
     </footer>
-
 
   </main>
 
-
-
-  <!-- =========================
-       LIGHTBOX
-  ========================= -->
 
   <div
     class="lightbox"
@@ -4021,20 +2892,9 @@
   </div>
 
 
-
-  <!-- =========================
-       LANGUAGE + INTERACTIONS
-  ========================= -->
-
   <script>
 
-
-    /* =========================
-       TRANSLATIONS
-    ========================= */
-
     const translations = {
-
 
       en: {
 
@@ -4043,7 +2903,6 @@
 
         metaDescription:
           "Arabic Copywriter and Content Strategist specializing in Arabic content, localization, campaigns, e-commerce and Gulf audiences.",
-
 
         navAbout:
           "About",
@@ -4056,7 +2915,6 @@
 
         navContact:
           "Contact",
-
 
         heroName:
           "Ola Abduldayem",
@@ -4079,7 +2937,6 @@
         downloadCV:
           "Download CV ↓",
 
-
         aboutLabel:
           "About Me",
 
@@ -4101,13 +2958,11 @@
         aboutSignature:
           "Think strategy. Write creatively. Localize intelligently.",
 
-
         servicesLabel:
           "What I Do",
 
         servicesTitle:
           "Turning ideas into content that works.",
-
 
         service1Title:
           "Copywriting",
@@ -4115,13 +2970,11 @@
         service1Desc:
           "Campaign concepts, advertising copy, headlines, social media, and creative content.",
 
-
         service2Title:
           "Arabic Content",
 
         service2Desc:
           "Content that sounds human, purposeful, and tailored to the audience.",
-
 
         service3Title:
           "Localization",
@@ -4129,13 +2982,11 @@
         service3Desc:
           "Arabic adaptation across MSA, Egyptian, Saudi, and Gulf dialects, beyond literal translation.",
 
-
         service4Title:
           "Content Strategy",
 
         service4Desc:
           "Turning audience insights and brand objectives into content with a clear direction.",
-
 
         service5Title:
           "E-commerce Content",
@@ -4143,13 +2994,11 @@
         service5Desc:
           "Product descriptions, listings, benefits-led copy, and conversion-focused content.",
 
-
         service6Title:
           "Creative Concepts & Scripts",
 
         service6Desc:
           "Ideas, storytelling, campaign scripts, and social-first creative concepts.",
-
 
         servicesClosing:
           "Different audiences. Different voices. One thing stays the same: the idea has to feel right in Arabic.",
@@ -4159,7 +3008,6 @@
 
         transitionMain:
           "Let the work speak.",
-
 
         workLabel:
           "Selected Work",
@@ -4173,7 +3021,6 @@
         workIntro2:
           "Some projects are presented anonymously due to client confidentiality.",
 
-
         briefLabel:
           "The Brief",
 
@@ -4183,7 +3030,6 @@
         whyLabel:
           "Why It Works",
 
-
         tagLocalization:
           "Localization",
 
@@ -4192,7 +3038,6 @@
 
         tagCampaignAdaptation:
           "Campaign Adaptation",
-
 
         p1Category:
           "Arabic Localization & Campaign Adaptation",
@@ -4209,7 +3054,6 @@
         p1Why:
           "The adaptation preserves the idea rather than the sentence, turning product features into a more human and relatable outcome.",
 
-
         tagEcommerce:
           "E-commerce",
 
@@ -4218,7 +3062,6 @@
 
         tagSearchContent:
           "Search Content",
-
 
         p2Category:
           "E-commerce Product Content",
@@ -4234,7 +3077,6 @@
 
         p2Why:
           "Clear hierarchy makes the listing easier to scan, while benefits-led language turns product details into information that feels useful to the shopper.",
-
 
         ecomHeader:
           "Anonymized Marketplace Content Structure",
@@ -4263,7 +3105,6 @@
         searchTermsExample:
           "cheese sauce · creamy dip · chili cheese sauce · sandwich sauce · burger sauce · dipping sauce · everyday meals",
 
-
         tagMarketingLocalization:
           "Marketing Localization",
 
@@ -4272,7 +3113,6 @@
 
         tagCreativeAdaptation:
           "Creative Adaptation",
-
 
         p3Category:
           "Entertainment-Led Campaign Adaptation",
@@ -4289,13 +3129,11 @@
         p3Why:
           "The entertainment reference stays recognizable, but the Arabic copy feels written for the audience rather than translated for them.",
 
-
         adaptationLinesLabel:
           "Selected Adaptation Lines",
 
         conceptLinesLabel:
           "Additional Concept Lines",
-
 
         tagCopyEditing:
           "Copy Editing",
@@ -4305,7 +3143,6 @@
 
         tagSaudiArabic:
           "Saudi Arabic",
-
 
         p4Category:
           "Copy Rework & Content Strategy",
@@ -4322,7 +3159,6 @@
         p4Why:
           "The rewritten version is audience-first, more conversational, and creates a faster path from problem to relevance.",
 
-
         tagScriptwriting:
           "Scriptwriting",
 
@@ -4331,7 +3167,6 @@
 
         tagSaudiDialect:
           "Saudi Dialect",
-
 
         p5Category:
           "Saudi Social Video Script",
@@ -4351,7 +3186,6 @@
         sceneExcerpt:
           "Scene Excerpt",
 
-
         tagCampaignStrategy:
           "Campaign Strategy",
 
@@ -4360,7 +3194,6 @@
 
         tagContentConcepts:
           "Content Concepts",
-
 
         p6Category:
           "Saudi Ramadan F&B Campaign Concept · Self-Initiated",
@@ -4376,7 +3209,6 @@
 
         p6Why:
           "One cultural insight becomes a flexible campaign system across shared food boxes, social content, competitions, influencer storytelling, packaging, and in-branch experiences.",
-
 
         bigIdeaLabel:
           "Big Idea & Selected Copy",
@@ -4399,7 +3231,6 @@
         activationText:
           "The proposal also explored influencer storytelling, selected in-branch experiences, competitions, and interactive ideas designed for different audience segments.",
 
-
         conceptLabel:
           "Concept Lab",
 
@@ -4409,13 +3240,11 @@
         conceptIntro:
           "Not every idea starts with a brief. Some start with a voice, a detail, or a question worth exploring.",
 
-
         concept1Title:
           "Four voices. One product.",
 
         concept1Text:
           "One pair of headphones written through four different voices, exploring how perspective changes the emotional meaning of the same product.",
-
 
         concept2Title:
           "Say less. Make them curious.",
@@ -4423,17 +3252,14 @@
         concept2Text:
           "A camera-copy exercise exploring three levels of communication: saying everything, suggesting the idea, and leaving space for the audience to complete it.",
 
-
         concept3Title:
           "Writing the feeling, not the feature.",
 
         concept3Text:
           "A Saudi-dialect writing exercise built around calm, coffee, conversation, and the feeling of having somewhere to lean at the end of the day.",
 
-
         viewLinkedIn:
           "View on LinkedIn",
-
 
         contactLabel:
           "Contact",
@@ -4453,11 +3279,6 @@
       },
 
 
-
-      /* =========================
-         ARABIC
-      ========================= */
-
       ar: {
 
         metaTitle:
@@ -4465,7 +3286,6 @@
 
         metaDescription:
           "كاتبة إعلانات عربية ومتخصصة في استراتيجية المحتوى، بخبرة في الحملات والتوطين والتجارة الإلكترونية والمحتوى الموجه للجمهور الخليجي.",
-
 
         navAbout:
           "عني",
@@ -4478,7 +3298,6 @@
 
         navContact:
           "تواصل",
-
 
         heroName:
           "علا عبد الدايم",
@@ -4501,7 +3320,6 @@
         downloadCV:
           "حمّل الـCV ↓",
 
-
         aboutLabel:
           "عني",
 
@@ -4523,13 +3341,11 @@
         aboutSignature:
           "أفكر باستراتيجية. أكتب بإبداع. وأوطّن بذكاء.",
 
-
         servicesLabel:
           "الخدمات",
 
         servicesTitle:
           "من الفكرة... لمحتوى يوصل ويشتغل.",
-
 
         service1Title:
           "كتابة إعلانية",
@@ -4537,13 +3353,11 @@
         service1Desc:
           "أفكار حملات، إعلانات، عناوين، محتوى سوشيال وكتابة إبداعية.",
 
-
         service2Title:
           "محتوى عربي",
 
         service2Desc:
           "محتوى طبيعي، له هدف، ومكتوب على مقاس الجمهور.",
-
 
         service3Title:
           "توطين",
@@ -4551,13 +3365,11 @@
         service3Desc:
           "تكييف المحتوى للفصحى والمصري والسعودي والخليجي، بعيدًا عن الترجمة الحرفية.",
 
-
         service4Title:
           "استراتيجية محتوى",
 
         service4Desc:
           "تحويل فهم الجمهور وأهداف البراند إلى اتجاه محتوى واضح.",
-
 
         service5Title:
           "محتوى التجارة الإلكترونية",
@@ -4565,13 +3377,11 @@
         service5Desc:
           "وصف منتجات، صفحات بيع، فوائد واضحة ومحتوى يساعد المتسوق على اتخاذ قراره.",
 
-
         service6Title:
           "أفكار إبداعية وسكربتات",
 
         service6Desc:
           "أفكار، storytelling، سكربتات حملات ومفاهيم مصممة للسوشيال.",
-
 
         servicesClosing:
           "جمهور مختلف. صوت مختلف. لكن شيء واحد ما يتغير: الفكرة لازم تحس إنها مكتوبة له من البداية.",
@@ -4581,7 +3391,6 @@
 
         transitionMain:
           "خلّ الشغل يتكلم.",
-
 
         workLabel:
           "نماذج مختارة",
@@ -4595,7 +3404,6 @@
         workIntro2:
           "بعض المشاريع معروضة بدون أسماء حفاظًا على سرية العملاء.",
 
-
         briefLabel:
           "المطلوب",
 
@@ -4605,7 +3413,6 @@
         whyLabel:
           "ليش يشتغل؟",
 
-
         tagLocalization:
           "توطين",
 
@@ -4614,7 +3421,6 @@
 
         tagCampaignAdaptation:
           "تكييف حملات",
-
 
         p1Category:
           "توطين عربي وتكييف حملة",
@@ -4631,7 +3437,6 @@
         p1Why:
           "التوطين هنا يحافظ على الفكرة، مو على الجملة، ويحوّل الميزة من معلومة تقنية إلى فائدة أقرب للناس.",
 
-
         tagEcommerce:
           "تجارة إلكترونية",
 
@@ -4640,7 +3445,6 @@
 
         tagSearchContent:
           "محتوى للبحث",
-
 
         p2Category:
           "محتوى منتجات للتجارة الإلكترونية",
@@ -4656,7 +3460,6 @@
 
         p2Why:
           "الترتيب الواضح يسهّل قراءة الصفحة، واللغة المبنية على الفوائد تخلي تفاصيل المنتج مفيدة بدل ما تكون مجرد مواصفات.",
-
 
         ecomHeader:
           "نموذج مجهّل لهيكل محتوى متجر إلكتروني",
@@ -4685,7 +3488,6 @@
         searchTermsExample:
           "صوص جبنة · تغميسة كريمية · صوص بالفلفل · صوص للبرجر · صوص للساندويتشات · وجبات سريعة",
 
-
         tagMarketingLocalization:
           "توطين تسويقي",
 
@@ -4694,7 +3496,6 @@
 
         tagCreativeAdaptation:
           "تكييف إبداعي",
-
 
         p3Category:
           "تكييف حملة مرتبطة بالترفيه",
@@ -4711,13 +3512,11 @@
         p3Why:
           "المرجع الترفيهي يظل واضح، لكن الجملة العربية تحس إنها مكتوبة للجمهور من البداية، مو مترجمة له.",
 
-
         adaptationLinesLabel:
           "نماذج من التكييف",
 
         conceptLinesLabel:
           "نماذج إضافية من الأفكار",
-
 
         tagCopyEditing:
           "إعادة صياغة",
@@ -4727,7 +3526,6 @@
 
         tagSaudiArabic:
           "عربي سعودي",
-
 
         p4Category:
           "إعادة صياغة واستراتيجية محتوى",
@@ -4744,7 +3542,6 @@
         p4Why:
           "الصياغة الجديدة تبدأ من الجمهور، صوتها أقرب، وتوصل من المشكلة للحل بشكل أسرع.",
 
-
         tagScriptwriting:
           "سكربت",
 
@@ -4753,7 +3550,6 @@
 
         tagSaudiDialect:
           "لهجة سعودية",
-
 
         p5Category:
           "سيناريو فيديو باللهجة السعودية",
@@ -4773,7 +3569,6 @@
         sceneExcerpt:
           "جزء من المشهد",
 
-
         tagCampaignStrategy:
           "استراتيجية حملة",
 
@@ -4782,7 +3577,6 @@
 
         tagContentConcepts:
           "أفكار محتوى",
-
 
         p6Category:
           "مقترح حملة رمضانية للسوق السعودي · شخصي",
@@ -4798,7 +3592,6 @@
 
         p6Why:
           "Insight ثقافي واحد يتحول إلى منظومة حملة كاملة: بوكسات للمشاركة، محتوى اجتماعي، مسابقات، مؤثرين، تغليف وتجارب داخل الفروع.",
-
 
         bigIdeaLabel:
           "الفكرة الرئيسية ونماذج من الكتابة",
@@ -4821,7 +3614,6 @@
         activationText:
           "المقترح يشمل أيضًا storytelling مع المؤثرين، أفكار داخل بعض الفروع، مسابقات وتجارب تفاعلية تناسب شرائح مختلفة من الجمهور.",
 
-
         conceptLabel:
           "مختبر الأفكار",
 
@@ -4831,13 +3623,11 @@
         conceptIntro:
           "بعض الأفكار تبدأ بصوت، أو ملاحظة صغيرة، أو سؤال يستاهل نجرب نجاوبه بالكتابة.",
 
-
         concept1Title:
           "أربع أصوات. منتج واحد.",
 
         concept1Text:
           "نفس سماعة الرأس مكتوبة بأربع أصوات مختلفة، كتجربة في كيف يغيّر الصوت والزاوية المعنى العاطفي لنفس المنتج.",
-
 
         concept2Title:
           "قول أقل. خلّ الفضول يكمل.",
@@ -4845,17 +3635,14 @@
         concept2Text:
           "تجربة كتابة لكاميرا على ثلاث درجات: نقول كل شيء، نلمّح للفكرة، أو نترك مساحة للجمهور يكمل المعنى بنفسه.",
 
-
         concept3Title:
           "اكتب الإحساس، مو الميزة.",
 
         concept3Text:
           "تجربة كتابة باللهجة السعودية مبنية على الهدوء، القهوة، السوالف، وإحساس إن عندك مكان تسند عليه آخر اليوم.",
 
-
         viewLinkedIn:
           "شوفها على LinkedIn",
-
 
         contactLabel:
           "تواصل",
@@ -4876,11 +3663,6 @@
 
     };
 
-
-
-    /* =========================
-       LANGUAGE SWITCH
-    ========================= */
 
     const languageButtons =
       document.querySelectorAll(
@@ -4985,7 +3767,6 @@
     }
 
 
-
     languageButtons.forEach(
       (button) => {
 
@@ -5004,7 +3785,6 @@
     );
 
 
-
     const savedLanguage =
       localStorage.getItem(
         "olaPortfolioLanguage"
@@ -5017,11 +3797,6 @@
         : "en"
     );
 
-
-
-    /* =========================
-       ENTRY ANIMATIONS
-    ========================= */
 
     const revealItems =
       document.querySelectorAll(
@@ -5073,11 +3848,6 @@
       }
     );
 
-
-
-    /* =========================
-       NAV SHOW / HIDE
-    ========================= */
 
     const nav =
       document.getElementById(
@@ -5157,11 +3927,6 @@
     );
 
 
-
-    /* =========================
-       ACTIVE NAV SECTION
-    ========================= */
-
     const navLinks =
       document.querySelectorAll(
         ".nav-links a"
@@ -5235,11 +4000,6 @@
       }
     );
 
-
-
-    /* =========================
-       IMAGE LIGHTBOX
-    ========================= */
 
     const lightbox =
       document.getElementById(
@@ -5365,9 +4125,7 @@
       }
     );
 
-
   </script>
-
 
 </body>
 </html>
